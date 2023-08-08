@@ -8,20 +8,6 @@
     url("../fonts/franziska/FranziskaWeb\ W03\ Bold.ttf") format("truetype");
 }
 
-@font-face {
-  font-family: "garamond";
-  src: url("../fonts/garamond/Garamond\ Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "lato";
-  src: url("../fonts/lato/Lato-Black.ttf") format("truetype");
-}
-@font-face {
-  font-family: "merriweather";
-  src: url("../fonts/merriweather/Merriweather-Black.ttf") format("truetype");
-}
-
 *{
   font-family: Franziska, Georgia, cambria;
 }
