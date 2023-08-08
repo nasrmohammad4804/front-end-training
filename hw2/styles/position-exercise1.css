@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 2000px;
+}
+.box{
+
+    border: 2px solid grey;
+    position: absolute;
+    padding: 10px;
+    background-color: white;
+
+}
+.box1{
+    width: 200px;
+    height: 200px;
+}
+.box2{
+    width: 200px;
+    height: 400px;
+    left: 150px;
+    top: 150px;
+}
+.box3{
+    top: 400px;
+    width: 400px;
+    height: 200px;
+
+}
+.box4{
+    width: 150px;
+    height: 500px;
+    left: 380px;
+}

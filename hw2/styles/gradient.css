@@ -1,0 +1,48 @@
+
+.box{
+    margin-bottom: 40px;
+
+}
+.rectangle-box{
+
+    width: 400px;
+    height: 250px;
+}
+.circle-box{
+    width: 200px;
+    height: 200px;
+}
+.box1{
+
+    margin-bottom: 40px;
+    width: 400px;
+    height: 250px;
+    background: linear-gradient(
+        to bottom,
+        #0052b0,
+        #b340b3
+    );
+}
+.box2{
+    background: linear-gradient(
+        to right,
+        #f50707,
+        #f56e00,
+        #f7df00,
+        #66f507,
+        #0052b0,
+        #520f41,
+        #ff0856
+    );
+}
+.box3{
+    background: radial-gradient(
+        circle,
+        #ff0509,
+        #fff700,
+        #05ff33
+    );
+}
+.box4{
+    background-image: conic-gradient(#ff0000,#fff200);
+}

@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "Franziska";
+    src: url("../fonts/franziska/FranziskaWeb\ W03\ Thin.eot");
+    src: url("../fonts/franziska/FranziskaWeb\ W03\ Thin.eot?#iefix")
+        format("embedded-opentype"),
+      url("../fonts/franziska/FranziskaWeb\ W03\ Thin.woff2") format("woff2"),
+      url("../fonts/franziska/FranziskaWeb\ W03\ Thin.woff") format("woff"),
+      url("../fonts/franziska/FranziskaWeb\ W03\ Thin.ttf") format("truetype");
+      font-weight: 500;
+  }
+  
+  @font-face {
+    font-family: "garamond";
+    src: url("../fonts/garamond/Garamond\ Regular.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "lato-font";
+    src: url("../fonts/lato/Lato-Regular.ttf") format("truetype");
+
+
+  }
+  @font-face {
+    font-family: "merriweather";
+    src: url("../fonts/merriweather/Merriweather-Regular.ttf") format("truetype");
+  }

@@ -1,0 +1,33 @@
+
+*{
+    box-sizing: border-box;
+}
+.parent{
+    border: 1px solid black;
+}
+.left,.right{
+    width: 50%;
+    float: left;
+    padding: 7px;
+}
+.left{
+    font-family: merriweather,garamond,Geogia,serif;
+}
+.right{
+    font-family: 'lato-font';
+    font-size: 18px;
+    line-height: 1.2;
+    color: rgb(63, 62, 62);   
+}
+.left a{
+    font-weight: 800;
+    font-size: 20px;
+}
+.right h2{
+    font-size: 40px;
+    margin-top: 10px;
+    color: #333;
+}
+.right span{
+    font-weight: bold;
+}

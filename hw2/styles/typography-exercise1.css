@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "Franziska";
+  src: url("../fonts/franziska/FranziskaWeb\ W03\ Bold.eot");
+  src: url("../fonts/franziska/FranziskaWeb\ W03\ Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/franziska/FranziskaWeb\ W03\ Bold.woff2") format("woff2"),
+    url("../fonts/franziska/FranziskaWeb\ W03\ Bold.woff") format("woff"),
+    url("../fonts/franziska/FranziskaWeb\ W03\ Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "garamond";
+  src: url("../fonts/garamond/Garamond\ Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "lato";
+  src: url("../fonts/lato/Lato-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "merriweather";
+  src: url("../fonts/merriweather/Merriweather-Black.ttf") format("truetype");
+}
+
+*{
+  font-family: Franziska, Georgia, cambria;
+}
+body {
+  padding: 20px;
+}
+.blue-text{
+  color: #05377de6;
+  font-weight: 900;
+}
+pre {
+  margin: 0px;
+}
+blockquote:before {
+  content: open-quote;
+  font-size: 5em;
+  display: inline;
+  color: grey;
+    position: relative;
+    top: 40px;
+    
+}
+
+blockquote{
+
+    display: inline;
+    line-height: 1;
+}

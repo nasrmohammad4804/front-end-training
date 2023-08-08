@@ -1,0 +1,41 @@
+body{
+    background-color: wheat;
+    font-weight: 600;
+}
+.parent{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    margin: 50px auto;
+    position: relative;
+}
+.child{
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    text-align: center;
+    color: wheat;
+}
+.red-box{
+    background-color: rgb(129, 3, 3);
+}
+.green-box{
+    right: 0px;
+    background-color: green;
+    
+}
+.grey-box{
+    background-color: rgb(106, 104, 104);
+    /* width of parent - half width of this element -> if width of this element be 24 px -> left: calc(50% - 12px) */
+    left: calc(50% - 10%);
+    top: calc(50% - 10%);
+}
+.blue-box{
+    background-color: blue;
+    bottom: 0px;
+}
+.purple-box{
+    background-color: rgba(74, 16, 107,.9);
+    bottom: 0px;
+    right: 0px;
+}
