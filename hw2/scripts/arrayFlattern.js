@@ -1,14 +1,14 @@
 
-// solution 1
-// function flattArray(array){
 
-//     array.forEach(element => {
-//         if(Array.isArray(element))
-//         flattArray(element);
+function flattArray(array){
 
-//         else console.log(element)
-//     });
-// }
+    array.forEach(element => {
+        if(Array.isArray(element))
+        flattArray(element);
+
+        else console.log(element)
+    });
+}
 
 // solution 2
 function flattArray(array){
