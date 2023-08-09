@@ -1,0 +1,173 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+}
+*{
+    box-sizing: border-box;
+}
+ul{
+    padding: 0px;
+    margin: 0px;
+    background-color: #333;
+}
+li{
+    display: inline-block;
+    
+}
+ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+ul li a:hover{
+    background-color: #625f5f;
+    color: orange;
+}
+.slide-show{
+    height: 500px;
+    background-image: url('../images/slideshow1.jpg');
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+.slide-show-content{
+    margin: 70px 40px;
+    text-align: center;
+}
+
+.slide-show-content p{
+    line-height: 2.5;
+    text-align: start;
+}
+
+span{
+    color: rgb(255, 242, 0);
+}
+.white-font-color{
+    color: white;
+}
+.about-us{
+    padding: 7px 25px;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-block;
+}
+.about-us:hover{
+    background-color: #333;
+    color: orange;
+}
+.about-info{
+    height: 300px;
+}
+.about-right-panel{
+    background-color: #333;
+    text-align: center;
+    padding: 30px;
+
+}
+.about-left-panel,.about-right-panel{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.about-right-panel p{
+    line-height: 2;
+    font-size: 14px;
+    font-weight: 600;
+    
+}
+.section{
+    height: 250px;
+    clear: left;
+    text-align: center;
+}
+.section-left{
+    float: left;
+    width: 33.3%;
+    height: 100%;
+    background-color: #DDDDDD;
+    padding: 15px 30px;
+}
+.section-middle{
+    float: left;
+    background-color: #FAEBD7;
+    width: 33.3%;
+    height: 100%;
+    padding: 15px 30px;
+}
+
+.section-right{
+    float: left;
+    width: 33.3%;
+    height: 100%;
+    background-color:#DDDDDD ;
+    padding: 15px 30px;
+}
+
+.section-left i::before{
+    content: '';
+    background: url('../images/icons8-dumbbell-50.png');
+    display: block;
+    width: 50px;
+    height: 40px;
+    background-size: 100% 100%;
+    text-align: center;
+    position: relative;
+    right: calc(50% - 20px);
+     
+     animation: rotation;
+    animation-duration: .6s;
+    animation-delay: 0ms;
+    animation-iteration-count: infinite; 
+    
+}
+
+.section-middle i::before{
+    
+    content: '';
+    background: url('../images/spok.png');
+    display: block;
+    width: 50px;
+    height: 40px;
+    background-size: 100% 100%;
+    text-align: center;
+    position: relative;
+    right: calc(50% - 20px);
+    
+     animation: rotation;
+    animation-duration: 1.2s;
+
+    animation-delay: 0ms;
+    animation-iteration-count: infinite;
+}
+.section-right i::before{
+    content: '';
+    background: url('../images/hotel-icon.png');
+    display: block;
+    width: 50px;
+    height: 40px;
+    background-size: 100% 100%;
+    text-align: center;
+    position: relative;
+    right: calc(50% - 20px);
+}
+.section-left p,.section-middle p,.section-right p{
+    text-align: justify;
+    font-size: 13px;
+    line-height: 1.5;
+}
+@keyframes rotation{
+    from{
+        -webkit-transform: rotate(0deg);
+       
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+.footer{
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+}
