@@ -1,0 +1,18 @@
+ul{
+    padding: 0px;
+    margin: 0px;
+    background-color: #333;
+}
+li{
+    display: inline-block;
+    
+}
+ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+ul li a:hover{
+    background-color: #625f5f;
+    color: orange;
+}
