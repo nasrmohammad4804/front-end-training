@@ -1,24 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>تماس با ما</title>
-    <link rel="stylesheet" href="../styles/common-nav-bar.css">
-    <link rel="stylesheet" href="../styles/contact-us.css">
-</head>
-<body dir="rtl">
+    <link rel="stylesheet" href="../styles/common-nav-bar.css" />
+    <link rel="stylesheet" href="../styles/contact-us.css" />
+    <link rel="stylesheet" href="../styles/fontawesome.css">
+  </head>
+  <body dir="rtl">
 
-    <main>
-        <nav>
-            <ul>
-                <li><a class="white-font-color" href="home.html">خانه</a></li>
-                <li><a class="white-font-color" href="about-us.html">درباره ما</a></li>
-                <li><a class="white-font-color" href="contact-us.html">تماس با ما</a></li>
-            </ul>
-        </nav>
-    </main>
+
+      <nav>
+        <ul>
+          <li><a class="white-font-color" href="home.html">خانه</a></li>
+          <li>
+            <a class="white-font-color" href="about-us.html">درباره ما</a>
+          </li>
+          <li>
+            <a class="white-font-color" href="#">تماس با ما</a>
+          </li>
+        </ul>
+      </nav>
+
+      <main>
+      <section class="content">
+        <h2><span class="orange-text">تماس</span> با ما</h2>
+        <p>جهت ارتباط با ما فرم زیر را وارد نمایید</p>
+        <form action="">
+        
+            <div class="input-section">
+
+                <div class="lable-content">
+                    <label  for="fullName">نام</label>
+                </div>
+              <input name="fullName" id="fullName" type="text" required>
+
+            </div>
+
+            <div class="input-section">
+
+                <div class="lable-content">
+                    <label  for="email">ایمیل</label>
+                </div>
+              <input name="email" id="email" type="email" required>
+
+            </div>
+
+            <div class="input-section">
+
+                <div class="lable-content">
+                    <label  for="message-text">متن پیام</label>
+                </div>
+              <textarea name="messageText" id="" required></textarea>
+
+            </div>
+                <input type="submit" value="ارسال">
+
+        </form>
+      </section>
+
+      <section class="top-footer">
+            <div class="address-footer">
+                
+                <i class="fa fa-hotel fa-2x"></i>
+                <p>آدرس</p>
+                <span>تهران-جردن-پلاک 3</span>
+            </div>
     
-</body>
+            <div class="phone-footer">
+                <i class="fa fa-phone fa-2x"></i>
+                <p>شماره تماس</p>
+                <span>09031261399</span>
+            </div>
+            
+            <div class="email-footer">
+                <i class="fa fa-envelope fa-2x"></i>
+                <p>ایمیل</p>
+                <span>nasrmohammad4804@gmail.com</span>
+
+            </div>
+      </section>
+      <footer>
+        تمامی حقوق مادی و معنوی این سایت محفوظ است.
+      </footer>
+
+    </main>
+
+
+
+  </body>
 </html>

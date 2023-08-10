@@ -8,3 +8,60 @@ body{
 .white-font-color{
     color: white;
 }
+.content{
+    padding: 40px;
+    margin: 0px auto;
+    width: 500px;
+}
+.content p{
+    margin-top: 0px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.orange-text{
+    color: orange;
+}
+input[type='text'],input[type='email'],textarea{
+    padding: 8px;
+    border: 1px rgb(196, 193, 193) solid;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+}
+input[type='submit']{
+    padding: 7px 20px;
+    background-color: #333;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}
+textarea{
+    resize: vertical;
+}
+.lable-content{
+    margin-bottom: 5px;
+}
+.input-section{
+    margin-bottom: 20px;
+}
+.top-footer{
+    background-color:#444444 ;
+    padding: 20px;
+    color: #FFFFE1;
+    font-size: 15px;
+}
+.top-footer div{
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+}
+footer{
+    padding: 5px;
+    color: white;
+    background-color:#333333 ;
+    font-size: 12px;
+    text-align: center;
+}
+.address-footer span,.phone-footer span,.email-footer span{
+ font-size: 12px;
+}
