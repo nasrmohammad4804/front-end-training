@@ -27,6 +27,9 @@ input[type='text'],input[type='email'],textarea{
     border-radius: 4px;
     display: block;
     width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(52, 50, 50);
 }
 input[type='submit']{
     padding: 7px 20px;
