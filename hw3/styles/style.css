@@ -1,6 +1,9 @@
 :root{
     --customGrey:#CCCCCC;
     --skinGrey:#F1F1F1;
+    --boldGrey:#616161;
+    --paleGrey:#9E9E9E;
+    --turquoiseBlue:#009688;
     --customWhite:#fff
 }
 
@@ -65,7 +68,8 @@ aside{
     width: 25%;
     height: 100vh;
     position: sticky;
-    top: 0;
+    /* background-color: #009688; */
+    top: 0px;
 
 }
 .aside-first-section{
@@ -208,4 +212,145 @@ main{
     background-color: black;
     color: var(--customWhite);
 
+}
+.about-me{
+    padding: 15px 10px;
+}
+.picture{
+    display: flex;
+    gap: 15px;
+}
+.about-me img{
+    width: 50%;
+    height: 400px;
+}
+.about-me h3{
+    padding: 10px;
+}
+.skill-section{
+    display: flex;
+    row-gap: 30;
+}
+.skill-flex{
+    display: flex;
+    text-align: center;
+    color: var(--customWhite);
+}
+.skill-flex div:first-child{
+    background-color: var(--boldGrey);
+}
+.skill-flex div:last-child{
+    background-color: var(--paleGrey);
+}
+.skill-flex div{
+    padding-block: 10px;
+}
+
+.photography-skill div:first-child{
+    width: 95%;
+
+}
+.photography-skill div:last-child{
+    width: 5%;
+
+}
+
+.Web-design-skill div:first-child{
+    width: 85%;
+
+}
+.Web-design-skill div:last-child{
+    width: 15%;
+
+}
+
+.photoshop-skill div:first-child{
+    width: 80%;
+
+}
+.photoshop-skill div:last-child{
+    width: 20%;
+
+}
+.resume a{
+
+    display: inline-block;
+    margin-block: 30px;
+    text-decoration: none;
+    padding:15px;
+    background-color: var(--boldGrey);
+    color: var(--customWhite);
+}
+.resume a i{
+    padding-inline: 10px;
+}
+.resume a:hover{
+    background-color: var(--customGrey);
+    color: black;
+}
+.charge{
+    padding: 15px 10px;
+}
+.sales-panel{
+    display: flex;
+    gap: 20px;
+    text-align: center;
+}
+.basic-panel,.pro-panel,.premium-panel{
+    width: 33%;
+    border: 1px solid var(--customGrey);
+    opacity: .5;
+}
+.basic-panel:hover,.pro-panel:hover,.premium-panel:hover{
+    opacity: 1;
+}
+.basic-panel .sale-panel-type, .premium-panel .sale-panel-type{
+    background-color: black;
+}
+.pro-panel .sale-panel-type{
+    background-color: var(--turquoiseBlue);
+}
+.sale-panel-type{
+    font-size: 24px;
+    margin: 0px;
+    padding-block: 30px;
+    color: var(--customWhite);
+
+}
+.panel-services{
+    padding-block: 10px;
+}
+.panel-price{
+    padding-top: 25px;
+    font-weight: 600;
+
+}
+.panel-price div{
+    font-weight: 600;
+    font-size: 30px;
+}
+.panel-services,.panel-price{
+    background-color: var(--customWhite);
+    border-bottom: 1px solid var(--customGrey);
+    ;
+}
+.sign-up{
+    padding-block: 25px;
+    background-color: var(--skinGrey);
+    display: flex;
+    justify-content: center;
+}
+
+.sign-up div a{
+    display: block;
+    padding-block: 12px;
+    padding-inline: 24px;
+    text-decoration: none;
+    background-color: var(--turquoiseBlue);
+    color: var(--customWhite);
+
+}
+.sign-up div a:hover{
+    background-color: black;
+    color: var(--customWhite);
 }
