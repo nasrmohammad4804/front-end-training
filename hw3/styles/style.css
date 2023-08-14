@@ -68,7 +68,6 @@ aside{
     width: 25%;
     height: 100vh;
     position: sticky;
-    /* background-color: #009688; */
     top: 0px;
 
 }
@@ -169,11 +168,9 @@ main{
     flex-wrap: wrap;
     padding: 15px 10px;
     gap: 10px;
-    /* background-color: #009688; */
 }
 .main-image-box{
     width: 30%;
-    /* height: 200px; */
     flex-grow: 1;
     background-color: var(--customWhite);
 }
