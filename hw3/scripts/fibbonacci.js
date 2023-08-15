@@ -10,4 +10,4 @@ function findFibbonacci(number){
     return array;
 }
 
-console.log(findFibbonacci(14))
+console.log(findFibbonacci(6))

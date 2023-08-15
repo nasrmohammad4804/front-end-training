@@ -72,7 +72,7 @@ aside{
 
 }
 .aside-first-section{
-    padding: 15px 10px;
+    padding: 15px 20px;
 }
 aside img{
     width: 45%;
@@ -98,22 +98,28 @@ li:hover{
 }
 li i{
     margin-right: 20px;
-    font-size: 15px;
+    font-size: 20px;
+}
+
+.about-icon{
+    font-size: 18px;
 }
 li a{
     display: block;
     padding-block: 8px;
-    padding-inline: 10px;
+    padding-inline: 20px;
     text-decoration: none;
     color: black;
 }
 .social{
     display: flex;
     margin-top: 12px;
-    padding-inline: 10px;
+    padding-inline: 20px;
     gap: 5px;
 }
-
+.social div i{
+    font-size: 20px;
+}
 .social div i:hover{
     opacity: .6;
 }
@@ -123,7 +129,7 @@ main{
 
 }
 .top-header{
-    padding: 15px 10px;
+    padding: 15px 20px;
 }
 .top-header h1{
    font-weight: 900;
@@ -166,7 +172,7 @@ main{
 .main-images {
     display: flex;
     flex-wrap: wrap;
-    padding: 15px 10px;
+    padding: 15px 20px;
     gap: 10px;
 }
 .main-image-box{
@@ -211,7 +217,7 @@ main{
 
 }
 .about-me{
-    padding: 15px 10px;
+    padding: 15px 20px;
 }
 .picture{
     display: flex;
@@ -286,7 +292,7 @@ main{
     color: black;
 }
 .charge{
-    padding: 15px 10px;
+    padding: 15px 20px;
 }
 .sales-panel{
     display: flex;
@@ -349,5 +355,122 @@ main{
 }
 .sign-up div a:hover{
     background-color: black;
+    color: var(--customWhite);
+}
+.contact{
+    background-color: var(--paleGrey);
+}
+.contact h3{
+    padding: 20px 20px;
+    margin-top: 50px;
+    font-size: 20px;
+}
+.contact-communication{
+    display: flex;
+    padding-inline: 10px;
+    font-weight: 500;
+    padding-bottom: 50px;
+}
+.email-communication,.location,.phone-communication{
+    width: 33%;
+    text-align: center;
+    padding-block: 20px;
+    color: var(--customWhite);
+    flex-grow: 1;
+}
+.email-communication,.phone-communication{
+    background-color: var(--boldGrey);
+}
+.location{
+    background-color: var(--turquoiseBlue);
+}
+.contact-communication div p{
+    margin-bottom: 0px;
+}
+.form-data{
+    padding-inline: 20px;
+    background-color: var(--paleGrey);
+    font-weight: 600;
+}
+.form-data form{
+    border-top: .5px solid var(--customWhite);
+    padding-block: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 18px;
+}
+.name-input  ,.email-input ,.message-input{
+    width: 100%;
+}
+.name-input input,.email-input input,.message-input input{
+    display: block;
+    width: 100%;
+    padding: 12px;
+}
+.send-message-btn{
+    display: block;
+    padding: 12px;
+    background-color: black;
+    color: var(--customWhite);
+    border-radius: 2px;
+    cursor: pointer;
+    border: 0;
+}
+.send-message-btn:hover{
+    background-color: var(--customGrey);
+    color: black;
+}
+.send-message-btn i{
+    padding-inline: 5px;
+}
+.top-footer{
+    padding: 40px 30px;
+    background-color: var(--boldGrey) ;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    color: var(--customWhite);
+}
+.top-footer-section{
+    width: 33%;
+}
+.top-footer-section p a{
+    color: var(--customWhite);
+}
+.top-footer-section .blog-post img{
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-right: 20px;
+}
+.top-footer-section .blog-post:last-child{
+    border-top: 1px solid var(--customWhite);
+}
+.blog-post{
+    padding: 15px 20px;
+}
+.tags div{
+    background-color: var(--paleGrey);
+    color: black;
+    padding: 2px 8px;
+}
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5px;
+    row-gap: 25px;
+}
+.tags div:first-child{
+    background-color: black;
+    color: var(--customWhite);
+    
+}
+.buttom-footer{
+    padding: 35px;
+    background-color: black;
+    color: var(--customWhite);
+    text-align: center;
+}
+.buttom-footer a{
     color: var(--customWhite);
 }
