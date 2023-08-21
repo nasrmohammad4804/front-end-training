@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Raleway:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Raleway:wght@300&family=Roboto:wght@300&display=swap");
+.padding-0, body {
+  padding: 0px;
+}
+
+.margin-0, main .personal-info p, main .personal-info h2, body {
+  margin: 0px;
+}
+
+.d-flex, main .bottom-icon, main .card, .nav-top .icons, .nav-top {
+  display: flex;
+}
+
+.jusify-space-between, .nav-top {
+  justify-content: space-between;
+}
+
+.flex-wrap, main .card {
+  flex-wrap: wrap;
+}
+
+.align-item-start, main .card {
+  align-items: start;
+}
+
+.nav-top {
+  padding: 13px 20px;
+}
+.nav-top .clock {
+  font-size: 20px;
+}
+.nav-top .icons {
+  gap: 5px;
+}
+
+.d-flex, main .bottom-icon, main .card, .nav-top, .nav-top .icons {
+  display: flex;
+}
+
+.jusify-space-between, .nav-top {
+  justify-content: space-between;
+}
+
+.flex-wrap, main .card {
+  flex-wrap: wrap;
+}
+
+.align-item-start, main .card {
+  align-items: start;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: grey;
+}
+
+main {
+  width: 375px;
+  background-color: #FFF;
+  overflow: hidden;
+  margin: 100px auto;
+}
+main .personal-info {
+  text-align: center;
+  margin-top: 32px;
+}
+main .personal-info h2 {
+  font-size: 36px;
+  font-family: "Comfortaa";
+  margin-bottom: 16px;
+}
+main .personal-info p {
+  font-weight: 900;
+  font-family: "Roboto";
+  font-size: 13px;
+  margin-bottom: 32px;
+}
+main .links {
+  margin-inline: 16px;
+  margin-bottom: 32px;
+}
+main .links div {
+  padding-block: 18px;
+  border: 2px solid black;
+  border-radius: 6px;
+  font-weight: 900;
+  font-family: "Roboto";
+  font-size: 13px;
+  text-align: center;
+}
+main .links div:first-child {
+  background-color: black;
+  color: #FFF;
+  margin-bottom: 16px;
+}
+main .links div:last-child {
+  color: black;
+  background-color: #FFF;
+}
+main .card {
+  margin-inline: 16px;
+  column-gap: 9px;
+  row-gap: 10px;
+}
+main .card img {
+  width: 167px;
+}
+main .card img:nth-child(2) {
+  height: 248px;
+}
+main .card img:last-child {
+  height: 20px;
+  position: relative;
+  top: -30px;
+}
+main .bottom-icon {
+  justify-content: space-between;
+  padding-top: 9px;
+  margin-bottom: 21px;
+  padding-inline: 11px;
+}
+main .bottom-icon span {
+  padding: 11px 30px;
+  color: #FFF;
+  border-radius: 50px;
+  background: linear-gradient(180deg, #FF00D6, #FF4D00);
+}
+main hr {
+  margin-block-start: 0px;
+  margin-bottom: 8px;
+  width: 135px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: black;
+}/*# sourceMappingURL=profile.css.map */

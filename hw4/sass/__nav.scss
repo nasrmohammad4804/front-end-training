@@ -1,0 +1,16 @@
+@import './__flex';
+
+.nav-top{
+
+    @extend .d-flex;
+    @extend .jusify-space-between;
+    padding: 13px 20px;
+    
+    .clock{
+        font-size: 20px
+    }
+    .icons{
+        @extend .d-flex;
+        gap: 5px;
+    }
+}

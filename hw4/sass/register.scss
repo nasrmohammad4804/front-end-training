@@ -1,0 +1,61 @@
+@import './__helper';
+@import './__nav';
+@import './__flex';
+@import './__fonts';
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    @extend .padding-0;
+    @extend .margin-0;
+    background-color: grey;
+}
+
+main{
+    width: 375px;
+    background-color: #FFF;
+    overflow: hidden;
+    margin: 100px auto;
+
+    .last-page-icon{
+        margin-inline-start: calc($base-margin-size /2);
+        margin-block-start: calc($base-margin-size /2);
+    }
+
+    .register{
+        padding-inline: calc($base-margin-size / 2);
+
+        h2{
+            font-size: map-get($comforta-font,'font-size' );
+            font-family: map-get($comforta-font,'font-name' );
+            margin-block: $base-margin-size;
+        }
+        form{
+            font-family: map-get($roboto-font ,'font-name' );
+            font-weight: map-get($roboto-font, 'font-weight' );
+            font-size:  map-get($roboto-font ,'font-size' );
+
+            input{
+                display: block;
+                width: 100%;
+                padding-block: 18px;
+                border: 2px solid black;
+                border-radius: 6px;
+                margin-bottom: calc($base-margin-size / 2);
+
+                &::placeholder{
+                    padding-inline-start: 17px;
+                }
+
+                &[type="submit"]{
+                    background-color: black;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+}
