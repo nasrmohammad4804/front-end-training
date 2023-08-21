@@ -12,7 +12,7 @@
   display: flex;
 }
 
-.jusify-space-between, .nav-top {
+.jusify-space-between, main .bottom-icon, .nav-top {
   justify-content: space-between;
 }
 
@@ -38,7 +38,7 @@
   display: flex;
 }
 
-.jusify-space-between, .nav-top {
+.jusify-space-between, main .bottom-icon, .nav-top {
   justify-content: space-between;
 }
 
@@ -118,7 +118,6 @@ main .card img:last-child {
   top: -30px;
 }
 main .bottom-icon {
-  justify-content: space-between;
   padding-top: 9px;
   margin-bottom: 21px;
   padding-inline: 11px;

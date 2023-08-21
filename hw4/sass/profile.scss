@@ -84,7 +84,7 @@ main{
     }
     .bottom-icon{
         @extend .d-flex;
-        justify-content: space-between;
+        @extend .jusify-space-between;
         padding-top: 9px;
         margin-bottom:21px;
         padding-inline: 11px;
