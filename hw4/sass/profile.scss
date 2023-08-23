@@ -71,17 +71,19 @@ main{
 
         img{
             width: 167px;
-        }
-        & img:nth-child(2){
-            height: 248px;
 
+            &:nth-child(2){
+                height: 248px;
+    
+            }
+            &:last-child{
+                height: 20px;
+                position: relative;
+                top: -30px;
+            }
         }
-        & img:last-child{
-            height: 20px;
-            position: relative;
-            top: -30px;
         }
-    }
+        
     .bottom-icon{
         @extend .d-flex;
         @extend .jusify-space-between;
