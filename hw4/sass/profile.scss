@@ -1,111 +1,113 @@
-@import './__helper';
-@import './__nav';
-@import './__flex';
-@import './__fonts';
+@import "./__helper";
+@import "./__nav";
+@import "./__flex";
+@import "./__fonts";
 
-
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-body{
-    @extend .padding-0;
-    @extend .margin-0;
-    background-color: grey;
+body {
+  @extend .padding-0;
+  @extend .margin-0;
+  background-color: grey;
 }
 
-main{
-    width: 375px;
-    background-color: #FFF;
-    overflow: hidden;
-    margin: 100px auto;
-    
+main {
+  width: 375px;
+  background-color: #fff;
+  overflow: hidden;
+  margin: 100px auto;
 
-    .personal-info{
-        text-align: center;
-        margin-top: $base-margin-size;
+  .personal-info {
+    text-align: center;
+    margin-top: $base-margin-size;
 
-        h2{
-            font-size: 36px;
-            font-family: map-get($comforta-font, 'font-name');
-            @extend .margin-0;
-            margin-bottom: calc($base-margin-size / 2);
-        }
-        p{
-            font-weight: map-get($roboto-font, 'font-weight' );
-            font-family: map-get($roboto-font ,'font-name' );
-            font-size:  map-get($roboto-font ,'font-size' );
-            @extend .margin-0;
-            margin-bottom: $base-margin-size;
-        }
+    h2 {
+      font-size: 36px;
+      font-family: map-get($comforta-font, "font-name");
+      @extend .margin-0;
+      margin-bottom: calc($base-margin-size / 2);
     }
-    .links{
-        margin-inline: calc($base-margin-size / 2);
-        margin-bottom: $base-margin-size;
-        div{
-            padding-block: 18px;
-            border: 2px solid black;
-            border-radius: 6px;
-            font-weight: map-get($roboto-font, 'font-weight' );
-            font-family: map-get($roboto-font ,'font-name' );
-            font-size:  map-get($roboto-font ,'font-size' );
-            text-align: center;
-
-            &:first-child{
-                background-color: black;
-                color: #FFF;
-                margin-bottom: calc($base-margin-size / 2);
-            }
-            &:last-child{
-                color: black;
-                background-color: #FFF;
-            }
-        }
+    p {
+      font-weight: map-get($roboto-font, "font-weight");
+      font-family: map-get($roboto-font, "font-name");
+      font-size: map-get($roboto-font, "font-size");
+      @extend .margin-0;
+      margin-bottom: $base-margin-size;
     }
-    .card{
-        margin-inline: calc($base-margin-size / 2);
-        @extend .d-flex;
-        @extend .flex-wrap;
-        @extend .align-item-start;
-        column-gap: 9px;
-        row-gap: 10px;
+  }
+  .links {
+    margin-inline: calc($base-margin-size / 2);
+    margin-bottom: $base-margin-size;
+    div {
+      padding-block: 18px;
+      border: 2px solid black;
+      border-radius: 6px;
+      font-weight: map-get($roboto-font, "font-weight");
+      font-family: map-get($roboto-font, "font-name");
+      font-size: map-get($roboto-font, "font-size");
+      text-align: center;
 
-        img{
-            width: 167px;
-
-            &:nth-child(2){
-                height: 248px;
-    
-            }
-            &:last-child{
-                height: 20px;
-                position: relative;
-                top: -30px;
-            }
-        }
-        }
-        
-    .bottom-icon{
-        @extend .d-flex;
-        @extend .jusify-space-between;
-        padding-top: 9px;
-        margin-bottom:21px;
-        padding-inline: 11px;
-
-        span{
-            padding: 11px 30px;
-            color: #FFF;
-            border-radius: 50px;
-            background: linear-gradient(180deg,#FF00D6,#FF4D00);
-        }
-
-    }
-    hr{
-
-        margin-block-start: 0px;
-        margin-bottom: 8px;
-        width: 135px;
-        height: 5px;
-        border-radius: 5px;
+      &:first-child {
         background-color: black;
+        color: #fff;
+        margin-bottom: calc($base-margin-size / 2);
+      }
+      &:last-child {
+        color: black;
+        background-color: #fff;
+      }
     }
+  }
+  .card {
+    margin-inline: calc($base-margin-size / 2);
+    height: 310px;
+    @extend .d-flex;
+    gap: 9px;
+
+    .item-1 {
+    
+      @extend .d-flex;
+      @extend .column-flex-direction;
+      height: 310px;
+      row-gap: 10px;
+
+      img{
+        width: 167px;
+    
+        &:first-child{
+            height: 220px;
+        }
+        &:last-child{
+            
+            height: 30px;
+            flex-grow: 1;
+        }
+    }
+    }
+    
+  }
+}
+
+.bottom-icon {
+  @extend .d-flex;
+  @extend .jusify-space-between;
+  padding-top: 9px;
+  margin-bottom: 21px;
+  padding-inline: 11px;
+
+  span {
+    padding: 11px 30px;
+    color: #fff;
+    border-radius: 50px;
+    background: linear-gradient(180deg, #ff00d6, #ff4d00);
+  }
+}
+hr {
+  margin-block-start: 0px;
+  margin-bottom: 8px;
+  width: 135px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: black;
 }

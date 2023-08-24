@@ -8,20 +8,16 @@
   margin: 0px;
 }
 
-.d-flex, main .bottom-icon, main .card, .nav-top .icons, .nav-top {
+.d-flex, .bottom-icon, main .card .item-1, main .card, .nav-top .icons, .nav-top {
   display: flex;
 }
 
-.jusify-space-between, main .bottom-icon, .nav-top {
+.jusify-space-between, .bottom-icon, .nav-top {
   justify-content: space-between;
 }
 
-.flex-wrap, main .card {
-  flex-wrap: wrap;
-}
-
-.align-item-start, main .card {
-  align-items: start;
+.column-flex-direction, main .card .item-1 {
+  flex-direction: column;
 }
 
 .nav-top {
@@ -34,20 +30,16 @@
   gap: 5px;
 }
 
-.d-flex, main .bottom-icon, main .card, .nav-top, .nav-top .icons {
+.d-flex, .bottom-icon, main .card .item-1, main .card, .nav-top, .nav-top .icons {
   display: flex;
 }
 
-.jusify-space-between, main .bottom-icon, .nav-top {
+.jusify-space-between, .bottom-icon, .nav-top {
   justify-content: space-between;
 }
 
-.flex-wrap, main .card {
-  flex-wrap: wrap;
-}
-
-.align-item-start, main .card {
-  align-items: start;
+.column-flex-direction, main .card .item-1 {
+  flex-direction: column;
 }
 
 * {
@@ -60,7 +52,7 @@ body {
 
 main {
   width: 375px;
-  background-color: #FFF;
+  background-color: #fff;
   overflow: hidden;
   margin: 100px auto;
 }
@@ -94,41 +86,46 @@ main .links div {
 }
 main .links div:first-child {
   background-color: black;
-  color: #FFF;
+  color: #fff;
   margin-bottom: 16px;
 }
 main .links div:last-child {
   color: black;
-  background-color: #FFF;
+  background-color: #fff;
 }
 main .card {
   margin-inline: 16px;
-  column-gap: 9px;
+  height: 310px;
+  gap: 9px;
+}
+main .card .item-1 {
+  height: 310px;
   row-gap: 10px;
 }
-main .card img {
+main .card .item-1 img {
   width: 167px;
 }
-main .card img:nth-child(2) {
-  height: 248px;
+main .card .item-1 img:first-child {
+  height: 220px;
 }
-main .card img:last-child {
-  height: 20px;
-  position: relative;
-  top: -30px;
+main .card .item-1 img:last-child {
+  height: 30px;
+  flex-grow: 1;
 }
-main .bottom-icon {
+
+.bottom-icon {
   padding-top: 9px;
   margin-bottom: 21px;
   padding-inline: 11px;
 }
-main .bottom-icon span {
+.bottom-icon span {
   padding: 11px 30px;
-  color: #FFF;
+  color: #fff;
   border-radius: 50px;
-  background: linear-gradient(180deg, #FF00D6, #FF4D00);
+  background: linear-gradient(180deg, #ff00d6, #ff4d00);
 }
-main hr {
+
+hr {
   margin-block-start: 0px;
   margin-bottom: 8px;
   width: 135px;
