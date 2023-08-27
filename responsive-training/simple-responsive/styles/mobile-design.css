@@ -1,0 +1,8 @@
+@media screen and (max-width: 600px) {
+  .box {
+    flex-wrap: wrap;
+  }
+  .box .left-aside, .box .content, .box .right-aside {
+    width: 100%;
+  }
+}/*# sourceMappingURL=mobile-design.css.map */

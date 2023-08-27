@@ -1,0 +1,52 @@
+.box {
+  display: flex;
+}
+
+.box .content h1, .header {
+  margin: 0px;
+}
+
+footer, .box .right-aside {
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  padding-block-start: 35px;
+  padding-inline-start: 10px;
+  background-color: rgb(119, 42, 119);
+  color: white;
+}
+
+.box {
+  padding: 15px;
+}
+.box .content {
+  width: 50%;
+  padding: 30px;
+}
+.box .right-aside {
+  width: 25%;
+  background-color: #33b5e5;
+  color: white;
+  padding: 30px 10px;
+}
+.box .left-aside {
+  width: 25%;
+}
+.box .left-aside div {
+  padding: 10px;
+  background-color: #33b5e5;
+  margin-block-end: 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+footer {
+  padding-block-start: 25px;
+  background-color: #33b5e5;
+  color: white;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,11 @@
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .box {
+    flex-wrap: wrap;
+  }
+  .box .content {
+    width: 75%;
+  }
+  .box .right-aside {
+    width: 100%;
+  }
+}/*# sourceMappingURL=tablet-design.css.map */

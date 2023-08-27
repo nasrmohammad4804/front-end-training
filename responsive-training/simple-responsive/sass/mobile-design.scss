@@ -1,0 +1,15 @@
+
+@import 'mixin';
+
+
+@media screen and (max-width:600px){
+    .box{
+        flex-wrap: wrap;
+
+        .left-aside , .content,.right-aside{
+            @include size(100%);
+        }
+    }
+    
+
+}

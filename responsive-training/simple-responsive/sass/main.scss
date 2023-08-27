@@ -1,0 +1,55 @@
+@import 'variable';
+@import 'flex';
+@import 'helper';
+@import 'mixin';
+
+* {
+  box-sizing: border-box;
+}
+.header {
+  @include padding-block(35px);
+  @include padding-inline(10px);
+  background-color: $mediumPurple;
+  color: $transparentWhite;
+  @extend %margin-0;
+}
+.box {
+  @extend %d-flex;
+  @include padding(15px);
+
+  .content {
+    @include size(50%);
+    @include padding(30px);
+
+    h1 {
+      @extend %margin-0;
+    }
+  }
+  .right-aside {
+    @include size(25%);
+    background-color: $lightBlue;
+    color: $transparentWhite;
+    @extend %text-center;
+    @include padding(30px 10px);
+  }
+
+  .left-aside{
+    @include size(25%);
+
+    div{
+        @include padding(10px);
+        background-color: $lightBlue;
+        @include margin-block(null,10px);
+        border-radius: 5px;
+        color: $transparentWhite;
+    }
+   }
+   
+
+}
+footer {
+    @include padding-block(25px);
+    background-color: $lightBlue;
+    color: $transparentWhite;
+    @extend %text-center;
+  }

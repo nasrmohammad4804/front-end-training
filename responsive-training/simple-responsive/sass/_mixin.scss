@@ -1,0 +1,23 @@
+@mixin size($width:null, $height:null){
+    width: $width;
+    height: $height;
+}
+
+@mixin padding-block($start:null,$end:null){
+    padding-block-start: $start;
+    padding-block-end: $end;
+}
+
+@mixin padding-inline($start:null,$end:null){
+    padding-inline-start: $start;
+    padding-inline-end: $end;
+}
+
+@mixin padding($value){
+    padding: $value;
+}
+
+@mixin margin-block($start:null, $end:null){
+    margin-block-start: $start;
+    margin-block-end: $end;
+}
