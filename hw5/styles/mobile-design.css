@@ -1,0 +1,47 @@
+@media screen and (max-width:600px) {
+    aside{
+        display: none;
+    }
+    main{
+        width: 100%;
+    }
+    .small-device{
+        display: flex;
+        justify-content: space-between;
+    }
+    footer{
+        width: 100%;
+    }
+    .filter-photo , .filter-art{
+        display: none;
+    }
+    .main-image-box{
+        width: 100%;
+    }
+    .picture{
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+    .picture div{
+        width: 100%;
+    }
+    .sales-panel{
+        flex-wrap: wrap;
+    }
+    .basic-panel,.pro-panel,.premium-panel{
+        width: 100%;
+    }
+    .contact-communication{
+        flex-wrap: wrap;
+    }
+    .email-communication,.location,.phone-communication{
+        width: 100%;
+    }
+
+    .top-footer{
+        flex-wrap: wrap;
+    }
+    .top-footer-section{
+        width: 100%;
+    }
+}

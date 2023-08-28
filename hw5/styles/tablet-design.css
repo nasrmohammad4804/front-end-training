@@ -1,0 +1,15 @@
+@media screen and (min-width:601px) and (max-width:992px){
+    aside{
+        display: none;
+    }
+    main{
+        width: 100%;
+    }
+    .small-device{
+        display: flex;
+        justify-content: space-between;
+    }
+    footer{
+        width: 100%;
+    }
+}
