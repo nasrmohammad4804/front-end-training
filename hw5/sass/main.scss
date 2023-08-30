@@ -1,0 +1,634 @@
+@import 'font';
+@import 'variable';
+@import 'animation';
+@import 'function';
+@import 'mixin';
+@import 'helper';
+
+*{
+    box-sizing: border-box;
+    font-family:'Raleway';
+}
+body{
+    @extend %margin-0;
+    @extend %padding-0;
+    line-height: 1.5;
+    font-size: convertPXToRem(15px);
+    @extend %d-flex;
+    @extend %flex-wrap;
+    @extend %flex-row-reverse;
+}
+
+.sidebar{
+
+    @include size(convertPXToRem(300px),100vh);
+    order: 1;
+    @include position(sticky,0px);
+    
+    &__content{
+
+        @extend %padding-block-15;
+        @extend %padding-inline-20;
+
+
+        &__avatar{
+            @extend %d-flex;
+            @extend %justify-content-space-between;
+
+
+            &__image{
+                @include size(45%);
+                @include border-radius(convertPXToRem(5px));
+            }
+
+            &__icon--disable{
+                font-size: convertPXToRem(64px);
+                @include padding(convertPXToRem(10px),convertPXToRem(5px));
+                @extend %pointer-cursor;
+                @extend %display-none;
+                @extend %none-text-decoration;
+                color: black;
+
+                &:hover{
+                    color: map-get($map: $greyColors, $key: normalGrey );
+                }
+            }
+        }
+
+        &__paragraph{
+            color: map-get($map: $greyColors, $key: normalGrey );
+        }
+    }
+    &__nav{
+
+        &__list{
+            @extend %margin-0;
+            @extend %padding-0;
+            @extend %d-flex;
+            @extend %flex-column;
+            list-style-type: none;
+
+            &__item{
+
+                &:hover{
+                    background-color: map-get($greyColors,'customGrey' );
+                }
+
+                &__link{
+                    display: block;
+                    @include padding(convertPXToRem(8px),convertPXToRem(20px));
+                    @extend %none-text-decoration;
+                    color: black;
+
+
+                    &__icon{
+                        margin-right: convertPXToRem(20px);
+                    }
+                    &--large{
+                        font-size: convertPXToRem(18px);
+                    }
+                    &--blue{
+                        color: map-get($map: $blueColors, $key:turquoiseBlue );
+                    }
+                }
+            }
+
+        }
+    }
+
+    &__social{
+        @extend %d-flex;
+        margin-top: convertPXToRem(12px);
+        @extend %padding-inline-20;
+        @include gap-size(convertPXToRem(5px));
+
+        &__item{
+
+
+            &__icon{
+                font-size: convertPXToRem(20px);
+
+                &:hover{
+                    opacity: .6;
+                }
+            }
+        }
+    }
+}
+
+.main{
+    order: 0;
+    @include size(calc(100% - 300px));
+    background-color: map-get($map: $greyColors, $key: skinGrey);
+
+    &__close-side-menu{
+        @extend %display-none;
+        @include size(null,100%);
+        background-color: rgba(0,0,0,.5);
+    }
+
+    &__header{
+
+        @extend %padding-block-15;
+        @extend %padding-inline-20;
+
+        &__hide-section{
+
+            display: none;
+
+            &__icon{
+                font-size: convertPXToRem(36px);
+                color: black;
+                @extend %pointer-cursor;
+                @extend %none-text-decoration;
+            }
+    
+            &__image{
+                @include size(convertPXToRem(65px));
+                @include border-radius(50%);
+            }
+        }
+
+        &__heading{
+            font-size: 2em;
+            font-weight: 900;
+        }
+
+        &__filter{
+            @extend %d-flex;
+            @include gap-size(convertPXToRem(10px));
+            @extend %padding-block-15;
+            font-weight: 500;
+            border-bottom: convertPXToRem(7px) map-get($map: $greyColors, $key: customGrey) solid;
+
+
+            &__item{
+                @include padding(convertPXToRem(5px),convertPXToRem(10px));
+                background-color: map-get($map: $whiteColors, $key: customWhite );
+                @extend %border-0;
+                @extend %pointer-cursor;
+                
+
+                &:hover{
+                    background-color: map-get($map: $greyColors, $key: customGrey);
+                }
+                
+                &__icon{
+                    padding-inline: convertPXToRem(8px);
+                    font-size:  convertPXToRem(18px);;
+                }
+                &--secondary{
+
+                    background-color: black;
+                    color: map-get($map: $whiteColors, $key: customWhite );
+                    
+
+                    &:hover{
+                        color: black;
+                    }
+                }
+
+                &--primary{
+                    @include padding(convertPXToRem(5px));
+                }
+            }
+        }
+
+    }
+
+    &__card{
+
+        @extend %d-flex;
+        @extend %flex-wrap;
+        @extend %padding-block-15;
+        @extend %padding-inline-20;
+        @include gap-size(convertPXToRem(10px));
+
+        &__item{
+            @include size(30%);
+            flex-grow: 1;
+            background-color: map-get($map: $whiteColors, $key:customWhite );
+
+
+            &__content{
+                padding-inline: convertPXToRem(15px);
+            }
+
+            &__image{
+                @include size(100%,convertPXToRem(200px));
+
+                &:hover{
+                    opacity: .6;
+                }
+            }
+        }
+
+    }
+
+    &__pagination{
+        @include padding(convertPXToRem(40px),convertPXToRem(10px));
+        @extend %d-flex;
+        @extend %justify-content-center;
+
+        &__item{
+            display: block;
+            @include padding(convertPXToRem(5px),convertPXToRem(15px));
+            @extend %none-text-decoration;
+            color: black;
+
+
+            &--default{
+                background-color: black;
+                color: map-get($map: $whiteColors, $key: customWhite);
+
+                &:hover{
+                    color: black;
+                    background-color: map-get($map: $greyColors, $key: customGrey);
+                }
+            }
+
+            &--non-default{
+
+                &:hover{
+                    background-color: black;
+                    color: map-get($map: $whiteColors, $key: customWhite);
+                }
+            }
+        }
+
+    }
+
+    &__about-me{
+        @extend %padding-block-15;
+        @extend %padding-inline-20;
+
+        &__pictures{
+
+            @extend %d-flex;
+            @include gap-size(convertPXToRem(15px));
+
+
+            &__item{
+                @include size(50%,convertPXToRem(400px));
+
+                &__image{
+                    @include size(100%,100%);
+                }
+            }
+        }
+
+        &__header{
+            @include padding(convertPXToRem(10px),convertPXToRem(10px));
+        }
+
+        &__skill__item{
+            @extend %d-flex;
+            @extend %text-center;
+            color: map-get($map: $whiteColors, $key: customWhite);
+
+            &__progress{
+                @include padding(convertPXToRem(10px));
+
+                &--bold-grey{
+                    background-color: map-get($map: $greyColors, $key:boldGrey );
+                }
+                &--pale-grey{
+                    background-color: map-get($map: $greyColors, $key: paleGrey);
+                }
+
+                &--size-95{
+                    @include size(95%);
+                }
+
+                &--size-5{
+                    @include size(5%);
+                }
+
+                &--size-85{
+                    @include size(85%);
+                }
+
+                &--size-15{
+                    @include size(15%);
+                }
+                
+                &--size-80{
+                    @include size(80%);
+                }
+
+                &--size-20{
+                    @include size(20%);
+                }
+
+            }
+        }
+    }
+
+    &__resume{
+
+        &__link{
+
+            display: inline-block;
+            margin-block: convertPXToRem(30px);
+            @extend %none-text-decoration;
+            @include padding(convertPXToRem(15px),convertPXToRem(15px));
+            background-color: map-get($map: $greyColors, $key: boldGrey);
+            color: map-get($map: $whiteColors, $key: customWhite);
+
+
+            &__icon{
+
+                padding-inline: convertPXToRem(10px);
+
+                &:hover{
+                    background-color: map-get($map: $greyColors, $key: customGrey);
+                    color: black;
+                }
+            }
+        }
+    }
+
+    &__charge{
+        @extend %padding-block-15;
+        @extend %padding-inline-20;
+
+
+        &__sales-panel{
+            @extend %d-flex;
+            @extend %text-center;
+            @include gap-size(convertPXToRem(20px));
+
+            &__item{
+                @include size(33%);
+                border: convertPXToRem(1px) solid map-get($map: $greyColors, $key: customGrey);
+                opacity: .5;
+
+                &:hover{
+                    opacity: 1;
+                }
+
+                &__type{
+
+                    font-size: convertPXToRem(24px);
+                    @extend %margin-0;
+                    @include padding(convertPXToRem(30px));
+                    color: map-get($map: $whiteColors, $key:customWhite );
+
+
+                    &--blue{
+                        background-color: map-get($map: $blueColors, $key: turquoiseBlue);
+                    }
+
+                    &--black{
+                        background-color: black;
+                    }
+                }
+
+                &__services{
+                    @include padding(convertPXToRem(10px));
+                    @extend %common-charge-service-price-border-style;
+                }
+
+                &__price{
+                    padding-top: convertPXToRem(25px);
+                    @extend %common-charge-service-price-border-style;
+                    font-weight: 600;
+
+                    &__item{
+                        font-size: convertPXToRem(30px);
+                    }
+                }
+
+
+                &__sign-up{
+                    @include padding(convertPXToRem(25px));
+                    background-color: map-get($map: $greyColors, $key: skinGrey);
+                    @extend %d-flex;
+                    @extend %justify-content-center;
+    
+    
+                    &__link{
+    
+                        display: block;
+                        @include padding(convertPXToRem(12px),convertPXToRem(24px));
+                        @extend %none-text-decoration;
+                        background-color: map-get($map: $blueColors, $key: turquoiseBlue);
+                        color: map-get($map: $whiteColors, $key: customWhite);
+    
+                        &:hover{
+                            background-color: black;
+                            color: map-get($map: $whiteColors, $key:customWhite );
+                        }
+                    }
+                }
+            }
+
+            
+        }
+    }
+
+    &__contact{
+        background-color: map-get($map: $greyColors, $key: paleGrey);
+
+        &__header{
+            @include padding(convertPXToRem(20px),convertPXToRem(20px));
+            margin-top: convertPXToRem(50px);
+            font-size: convertPXToRem(20px);
+        }
+
+        &__communication{
+            @extend %d-flex;
+            padding-inline: convertPXToRem(10px);
+            font-weight: 500;
+            padding-bottom: convertPXToRem(50px);
+
+            
+            &__item{
+                @include size(33%);
+                @extend %text-center;
+                @include padding(convertPXToRem(20px));
+                color: map-get($map: $whiteColors, $key: customWhite);
+                flex-grow: 1;
+
+
+                &--bold-grey{
+                    background-color: map-get($map: $greyColors, $key: boldGrey);
+
+                }
+
+                &--turquoise-blue{
+                    background-color: map-get($map: $blueColors, $key: turquoiseBlue);
+                }
+
+                &__paragraph{
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+
+    &__form-data{
+        @extend %padding-inline-20;
+        background-color: map-get($map: $greyColors, $key: paleGrey);
+        font-weight: 600;
+
+
+        &__form{
+            border-top: convertPXToRem(.5px) solid map-get($map: $whiteColors, $key: customWhite);
+            @include padding(convertPXToRem(25px));
+            @extend %d-flex;
+            @extend %flex-wrap;
+            @include gap-size(convertPXToRem(18px));
+
+            
+            &__box{
+                @include size(100%);
+
+
+                &__input{
+                    display: block;
+                    @include size(100%);
+                    @include padding(convertPXToRem(12px),convertPXToRem(12px));
+                }
+            }
+
+            &__button{
+                display: block;
+                @include padding(convertPXToRem(12px),convertPXToRem(12px));
+                background-color: black;
+                color: map-get($map: $whiteColors, $key: customWhite);
+                @include border-radius(convertPXToRem(2px));
+                @extend %border-0;
+                @extend %pointer-cursor;
+
+
+                &__icon{
+                    padding-inline: convertPXToRem(5px);
+                }
+                &:hover{
+                    color: black;
+                    background-color: map-get($map: $greyColors, $key: customGrey);
+                }
+            }
+        }
+    }
+}
+
+.footer{
+
+    $footer-width:calc(100% - 300px);
+    order: 2;   
+    @include size($footer-width);
+
+
+    &__top{
+        @include padding(convertPXToRem(40px),convertPXToRem(30px));
+        background-color: map-get($map: $greyColors, $key: boldGrey);
+        @extend %d-flex;
+        @extend %justify-content-center;
+        @include gap-size(convertPXToRem(15px));
+        color: map-get($map: $whiteColors, $key: customWhite);
+
+
+        &__item{
+
+            @include size(33%);
+
+
+            &__paragraph{
+
+                &__link{
+                    color: map-get($map: $whiteColors, $key: customWhite);
+                }
+            }
+
+
+            &__blog{
+                
+                @extend %padding-block-15;
+                @extend %padding-inline-20;
+
+                &__image{
+
+                    float: left;
+                    @include size(convertPXToRem(60px),convertPXToRem(60px));
+                    margin-inline-end: convertPXToRem(20px);
+                }
+
+                &--secondary{
+                    border-top: convertPXToRem(1px) solid map-get($map: $whiteColors, $key: customWhite);
+                }
+            }
+
+            &__tags{
+
+                @extend %d-flex;
+                @extend %flex-wrap;
+                column-gap: convertPXToRem(5px);
+                row-gap: convertPXToRem(25px);
+
+
+                &__item{
+
+                    background-color: map-get($map: $greyColors, $key: paleGrey);
+                    color: black;
+                    @include padding(convertPXToRem(2px),convertPXToRem(8px));
+
+
+                    &--primary{
+                        background-color: black;
+                        color: map-get($map: $whiteColors, $key: customWhite);
+                    }
+                }
+            }
+        }
+    }
+
+
+    &__bottom{
+
+        @include padding(convertPXToRem(35px));
+        background-color: black;
+        color: map-get($map: $whiteColors, $key: customWhite);
+        @extend %text-center;
+
+
+        &__link{
+            color: map-get($map: $whiteColors, $key: customWhite);
+        }
+    }
+}
+// targets
+
+#bar-icon-visibility{
+
+    &:target{
+        display: block;
+        z-index: 1;
+        @include position(fixed,null,null,null,0px);
+        background-color: map-get($map: $whiteColors, $key: customWhite);
+        overflow: auto;
+        @include animation( animateLeft ,.4s);
+    }
+
+    &:target .sidebar__content__avatar__icon--disable{
+        display: block;
+    }
+
+    &:target ~ .main .main__close-side-menu{
+        display: block;
+        @include position(fixed,null,0px);
+        @include size(calc(100% - 300px));
+        z-index: 1;
+        background-color: rgba(0,0,0,.5);
+    }
+}
+#bar-icon-disable{
+
+    &:target .sidebar{
+        @extend  %display-none;
+    }
+}
+
+// -------------
+

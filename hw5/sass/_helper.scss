@@ -1,0 +1,59 @@
+@import 'function';
+@import 'variable.scss';
+
+%d-flex{
+    display: flex;
+}
+%flex-wrap{
+    flex-wrap: wrap;
+}
+%flex-row-reverse{
+    flex-direction: row-reverse;
+}
+%flex-column{
+    flex-direction: column;
+}
+
+%justify-content-space-between{
+    justify-content: space-between;
+}
+%justify-content-center{
+    justify-content: center;
+}
+
+%padding-block-15{
+    padding-block: convertPXToRem(15px);
+}
+%padding-inline-20{
+    padding-inline: convertPXToRem(20px);
+}
+%padding-0{
+    padding: 0px;
+}
+
+%margin-0{
+    margin: 0px;
+}
+%border-0{
+    border: 0px;
+}
+
+%display-none{
+    display: none;
+}
+
+%pointer-cursor{
+    cursor: pointer;
+}
+%none-text-decoration{
+    text-decoration: none;
+}
+%text-center{
+    text-align: center;
+}
+
+
+%common-charge-service-price-border-style{
+    background-color: map-get($map: $whiteColors, $key: customWhite);
+    border-bottom: convertPXToRem(1px) solid map-get($map: $greyColors, $key: customGrey);
+}

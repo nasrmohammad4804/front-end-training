@@ -1,47 +1,46 @@
-@media screen and (max-width:600px) {
-    .sidebar{
-        display: none;
-    }
-    .main{
-        width: 100%;
-    }
-    .main__header__hide-section{
-        display: flex;
-        justify-content: space-between;
-    }
-    .footer{
-        width: 100%;
-    }
-    .main__header__filter__item--unvisible{
-        display: none;
-    }
-    .main__card__item{
-        width: 100%;
-    }
-    .main__about-me__pictures{
-        flex-wrap: wrap;
-        gap: 0px;
-    }
-    .main__about-me__pictures__item{
-        width: 100%;
-    }
-    .sales-panel{
-        flex-wrap: wrap;
-    }
-    .main__charge__sales-panel__item{
-        width: 100%;
-    }
-    .main__contact__communication{
-        flex-wrap: wrap;
-    }
-    .main__contact__communication__item{
-        width: 100%;
-    }
-
-    .footer__top{
-        flex-wrap: wrap;
-    }
-    .footer__top__item{
-        width: 100%;
-    }
-}
+@media screen and (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+  .main {
+    width: 100%;
+  }
+  .main__header__hide-section {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main__header__filter__item--unvisible {
+    display: none;
+  }
+  .main__card__item {
+    width: 100%;
+  }
+  .main__about-me__pictures {
+    flex-wrap: wrap;
+    gap: 0px;
+  }
+  .main__about-me__pictures__item {
+    width: 100%;
+  }
+  .main__charge__sales-panel {
+    flex-wrap: wrap;
+  }
+  .main__charge__sales-panel__item {
+    width: 100%;
+  }
+  .main__contact__communication {
+    flex-wrap: wrap;
+  }
+  .main__contact__communication__item {
+    width: 100%;
+  }
+  .footer {
+    width: 100%;
+  }
+  .footer__top {
+    flex-wrap: wrap;
+  }
+  .footer__top__item {
+    width: 100%;
+  }
+}/*# sourceMappingURL=mobile-design.css.map */

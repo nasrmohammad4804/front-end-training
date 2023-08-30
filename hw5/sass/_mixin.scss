@@ -1,0 +1,36 @@
+@import 'animation';
+
+@mixin size($width:null, $height:null){
+    width: $width;
+    height: $height;
+}
+
+@mixin position($position,$top:null,$right:null,$bottom:null,$left:null){
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin padding($block:null,$inline:null){
+    padding-block: $block;
+    padding-inline: $inline;
+}
+@mixin border-radius($value){
+    border-radius: $value;
+}
+@mixin display($value){
+    display: $value;
+}
+@mixin flex-wrap($value:null){
+    flex-wrap: $value;
+}
+@mixin gap-size($value){
+    gap: $value;
+}
+
+
+@mixin animation($name,$duration){
+    animation: $name $duration;
+}

@@ -1,0 +1,25 @@
+@import 'mixin';
+
+@media screen and (min-width:601px) and (max-width:992px){
+
+    .sidebar{
+        @include display(none);
+
+    }
+
+    .main{
+        @include size(100%);
+
+        &__header{
+
+            &__hide-section{
+                
+                @include display(flex);
+                justify-content: space-between;
+            }
+        }
+    }
+    .footer{
+        @include size(100%);
+    }
+}

@@ -1,0 +1,88 @@
+@import 'mixin';
+
+@media screen and (max-width:600px) {
+    
+    .sidebar{
+        @include display(none);
+    }
+
+    .main{
+
+        @include size(100%);
+
+        &__header{
+
+            &__hide-section{
+                @include display(flex);
+                justify-content: space-between;
+            }
+
+            &__filter{
+
+                &__item--unvisible{
+                    @include display(none);
+                }
+            }
+        }
+
+        &__card{
+
+            &__item{
+                @include size(100%);
+            }
+        }
+
+        &__about-me{
+
+            &__pictures{
+                @include flex-wrap(wrap);
+                @include gap-size(0px);
+
+
+                &__item{
+                    @include size(100%);
+                }
+            }
+        }
+
+        &__charge{
+
+            &__sales-panel{
+                
+                @include flex-wrap(wrap);
+
+                &__item{
+
+                    @include size(100%);
+                }
+            }
+        }
+
+        &__contact{
+
+            &__communication{
+
+                @include flex-wrap(wrap);
+
+                &__item{
+
+                    @include size(100%);
+                }
+            }
+        }
+    }
+
+    .footer{
+
+        @include size(100%);
+        &__top{
+
+            @include flex-wrap(wrap);
+
+            &__item{
+
+                @include size(100%);
+            }
+        }
+    }
+}

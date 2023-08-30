@@ -1,15 +1,15 @@
-@media screen and (min-width:601px) and (max-width:992px){
-    .sidebar{
-        display: none;
-    }
-    .main{
-        width: 100%;
-    }
-    .main__header__hide-section{
-        display: flex;
-        justify-content: space-between;
-    }
-    .footer{
-        width: 100%;
-    }
-}
+@media screen and (min-width: 601px) and (max-width: 992px) {
+  .sidebar {
+    display: none;
+  }
+  .main {
+    width: 100%;
+  }
+  .main__header__hide-section {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer {
+    width: 100%;
+  }
+}/*# sourceMappingURL=tablet-design.css.map */
