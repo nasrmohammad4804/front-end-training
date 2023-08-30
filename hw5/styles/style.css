@@ -6,7 +6,6 @@
     --turquoiseBlue:#009688;
     --customWhite:#fff
 }
-
 @font-face {
     font-family: 'Raleway';
     font-style: normal;
@@ -61,7 +60,7 @@ body{
     flex-direction: row-reverse;
 }
 
-footer{
+.footer{
     width: calc(100% - 300px);
     order: 2;
 }
@@ -70,7 +69,7 @@ footer{
     font-family:'Raleway';
     
 }
-aside{
+.sidebar{
     order: 1;
     width: 300px;
     height: 100vh;
@@ -78,18 +77,18 @@ aside{
     top: 0px;
 
 }
-.aside-first-section{
+.sidebar__content{
     padding: 15px 20px;
 }
-.avatar-image-remove-icon{
+.sidebar__content__avatar{
     display: flex;
     justify-content: space-between;
 }
-.avatar-image-remove-icon img{
+.sidebar__content__avatar__image{
     width: 45%;
     border-radius: 5px;
 }
-.avatar-image-remove-icon .remove-icon{
+.sidebar__content__avatar__icon--disable{
     font-size: 64px;
     padding: 10px 5px;
     cursor: pointer;
@@ -97,13 +96,13 @@ aside{
     text-decoration: none;
     color: black;
 }
-.remove-icon:hover{
+.sidebar__content__avatar__icon--disable:hover{
     background-color: grey;
 }
 .text-grey{
     color: grey;
 }
-ul{
+.sidebar__nav__list{
     padding: 0px;
     margin: 0px;
     display: flex;
@@ -111,27 +110,26 @@ ul{
     list-style-type: none;
 }
 
-li:hover{
+.sidebar__nav__list__item:hover{
     background-color: var(--customGrey);
 }
-.portfolio-icon{
-    color: #009688;
-    text-decoration: none;
-}
-li i{
+
+.sidebar__nav__list__item__link__icon{
     margin-right: 20px;
-    font-size: 20px;
 }
 
-.about-icon{
+.sidebar__nav__list__item__link--lage{
     font-size: 18px;
 }
-li a{
+.sidebar__nav__list__item__link{
     display: block;
     padding-block: 8px;
     padding-inline: 20px;
     text-decoration: none;
     color: black;
+}
+.sidebar__nav__list__item__link--blue{
+    color: #009688;
 }
 .social{
     display: flex;
@@ -139,31 +137,36 @@ li a{
     padding-inline: 20px;
     gap: 5px;
 }
-.social div i{
+.social__item__icon{
     font-size: 20px;
 }
-.social div i:hover{
+.social__item__icon:hover{
     opacity: .6;
 }
-main{
+.main{
     order: 0;
     width: calc(100% - 300px);
     background-color: var(--skinGrey);
 
 }
-.small-device{
+.main__close-side-menu{
+    display: none;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+}
+
+.main__header__hide-section{
     display: none;
 }
-.small-device .bar-icon{
+.main__header__hide-section__icon{
     font-size: 36px;
     cursor: pointer;
     color: black;
     text-decoration: none;
 }
-.close-side-menu{
-    display: none;
-    height: 100%;
-    background-color: rgba(0,0,0,.5);
+.main__header__hide-section__image{
+    width: 65px;
+    border-radius: 50%;
 }
 #bar-icon-visibility:target {
     display: block; 
@@ -175,10 +178,10 @@ main{
     animation: animateLeft .4s;
 
 }
-#bar-icon-visibility:target .aside-first-section  .avatar-image-remove-icon .remove-icon {
+#bar-icon-visibility:target .sidebar__content__avatar__icon--disable {
     display: block;
 }
-#bar-icon-visibility:target ~ main .close-side-menu{
+#bar-icon-visibility:target ~ .main__close-side-menu{
     display: block;
     position: fixed;
     width: calc(100% - 300px);
@@ -186,167 +189,158 @@ main{
     right: 0;
     background-color: rgba(0,0,0,.5);
 }
-#bar-icon-disable:target aside{
+#bar-icon-disable:target .sidebar{
     display: none;
 }
 
-.small-device img{
-    width: 65px;
-    border-radius: 50%;
-}
-.top-header{
+.main__header{
     padding: 15px 20px;
 }
-.top-header h1{
+.main__header__heading{
    font-weight: 900;
     font-size: 2em;
-   /* margin-top: 0px; */
 }
-.filter{
+.main__header__filter{
     display: flex;
     gap: 10px;
     padding-block: 15px;
     font-weight: 500;
     border-bottom: 7px var(--customGrey) solid;
 }
-.filter-all, .filter-design,.filter-photo,.filter-art{
+.main__header__filter__item{
     padding: 5px 10px;
     background-color: var(--customWhite);
+    border:0px;
+    cursor: pointer;
 }
-.filter-all{
+.main__header__filter__item--secondary{
     background-color: black;
     color: var(--customWhite);
 }
-.filter-all:hover{
+.main__header__filter__item--secondary:hover{
     color: black;
     background-color: var(--customGrey);
 }
 .filter-design:hover,.filter-photo:hover,.filter-art:hover{
     background-color: var(--customGrey);
 }
-.filter div:first-child{
+.main__header__filter__item--primary{
     padding-block: 5px;
 }
-.filter button{
-    border:0px;
-    cursor: pointer;
-}
-.filter button i{
+
+.main__header__filter__item__icon{
     padding-inline: 8px;
     font-size: 18px;
 }
-.main-images {
+.main__card {
     display: flex;
     flex-wrap: wrap;
     padding: 15px 20px;
     gap: 10px;
 }
-.main-image-box{
+.main__card__item{
     width: 30%;
     flex-grow: 1;
     background-color: var(--customWhite);
 }
-.main-image-box div{
+.main__card__item__content{
     padding-inline: 15px;
 
 }
-.main-image-box img{
+.main__card__item__image{
     width: 100%;
     height: 200px;
 }
-.main-image-box img:hover{
+.main__card__item__image:hover{
     opacity: .6;
 }
-.pagination{
+.main__pagination{
     padding: 40px 10px;
     display: flex;
     justify-content: center;
 }
-.pagination div a{
+.main__pagination_item{
     display: block;
     padding: 5px 15px;
     text-decoration: none;
     color: black;
 }
-.page-one{
+.main__pagination_item--default{
     background-color: black;
     color: var(--customWhite) !important;
 }
 
-.page-one:hover{
+.main__pagination_item--default:hover{
     color: black;
     background-color: var(--customGrey);
 }
-.last-page:hover,.page-two:hover,.page-three:hover,.page-four:hover,.next-page:hover{
+.main__pagination_item--non-default:hover{
     background-color: black;
     color: var(--customWhite);
 
 }
-.about-me{
+.main__about-me{
     padding: 15px 20px;
 }
-.picture{
+.main__about-me__pictures{
     display: flex;
     gap: 15px;
 }
-.picture div{
+.main__about-me__pictures__item{
     width: 50%;
     height: 400px;
 }
-.picture div img{
+.main__about-me__pictures__item__image{
     width: 100%;
     height: 100%;
 }
 
-.about-me h3{
+.main__about-me__header{
     padding: 10px;
 }
-.skill-section{
-    display: flex;
-    row-gap: 30;
-}
-.skill-flex{
+
+.main__about-me__skill__item{
     display: flex;
     text-align: center;
     color: var(--customWhite);
 }
-.skill-flex div:first-child{
+.main__about-me__skill__item__progress--bold-grey{
     background-color: var(--boldGrey);
 }
-.skill-flex div:last-child{
+.main__about-me__skill__item__progress--pale-grey{
     background-color: var(--paleGrey);
 }
-.skill-flex div{
+.main__about-me__skill__item__progress{
     padding-block: 10px;
 }
 
-.photography-skill div:first-child{
+.main__about-me__skill__item__progress--size-95{
     width: 95%;
 
 }
-.photography-skill div:last-child{
+.main__about-me__skill__item__progress--size-5{
     width: 5%;
 
 }
 
-.Web-design-skill div:first-child{
+.main__about-me__skill__item__progress--size-85{
     width: 85%;
 
 }
-.Web-design-skill div:last-child{
+.main__about-me__skill__item__progress--size-15{
     width: 15%;
 
 }
 
-.photoshop-skill div:first-child{
+.main__about-me__skill__item__progress--size-80{
     width: 80%;
 
 }
-.photoshop-skill div:last-child{
+.main__about-me__skill__item__progress--size-20{
     width: 20%;
 
 }
-.resume a{
+.main__resume__link{
 
     display: inline-block;
     margin-block: 30px;
@@ -355,67 +349,67 @@ main{
     background-color: var(--boldGrey);
     color: var(--customWhite);
 }
-.resume a i{
+.main__resume__link__icon{
     padding-inline: 10px;
 }
-.resume a:hover{
+.main__resume__link:hover{
     background-color: var(--customGrey);
     color: black;
 }
-.charge{
+.main__charge{
     padding: 15px 20px;
 }
-.sales-panel{
+.main__charge__sales-panel{
     display: flex;
     gap: 20px;
     text-align: center;
 }
-.basic-panel,.pro-panel,.premium-panel{
+.main__charge__sales-panel__item{
     width: 33%;
     border: 1px solid var(--customGrey);
     opacity: .5;
 }
-.basic-panel:hover,.pro-panel:hover,.premium-panel:hover{
+.main__charge__sales-panel__item:hover{
     opacity: 1;
 }
-.basic-panel .sale-panel-type, .premium-panel .sale-panel-type{
+.main__charge__sales-panel__item__type--black{
     background-color: black;
 }
-.pro-panel .sale-panel-type{
+.main__charge__sales-panel__item__type--blue{
     background-color: var(--turquoiseBlue);
 }
-.sale-panel-type{
+.main__charge__sales-panel__item__type{
     font-size: 24px;
     margin: 0px;
     padding-block: 30px;
     color: var(--customWhite);
 
 }
-.panel-services{
+.main__charge__sales-panel__item_services{
     padding-block: 10px;
 }
-.panel-price{
+.main__charge__sales-panel__item__price{
     padding-top: 25px;
     font-weight: 600;
 
 }
-.panel-price div{
+.main__charge__sales-panel__item__price_item{
     font-weight: 600;
     font-size: 30px;
 }
-.panel-services,.panel-price{
+.main__charge__sales-panel__item__services,.main__charge__sales-panel__item__price{
     background-color: var(--customWhite);
     border-bottom: 1px solid var(--customGrey);
     ;
 }
-.sign-up{
+.main__charge__sales-panel__item__sign-up{
     padding-block: 25px;
     background-color: var(--skinGrey);
     display: flex;
     justify-content: center;
 }
 
-.sign-up div a{
+.main__charge__sales-panel__item__sign-up__link{
     display: block;
     padding-block: 12px;
     padding-inline: 24px;
@@ -424,61 +418,61 @@ main{
     color: var(--customWhite);
 
 }
-.sign-up div a:hover{
+.main__charge__sales-panel__item__sign-up__link:hover{
     background-color: black;
     color: var(--customWhite);
 }
-.contact{
+.main__contact{
     background-color: var(--paleGrey);
 }
-.contact h3{
+.main__contact__header{
     padding: 20px 20px;
     margin-top: 50px;
     font-size: 20px;
 }
-.contact-communication{
+.main__contact__communication{
     display: flex;
     padding-inline: 10px;
     font-weight: 500;
     padding-bottom: 50px;
 }
-.email-communication,.location,.phone-communication{
+.main__contact__communication__item{
     width: 33%;
     text-align: center;
     padding-block: 20px;
     color: var(--customWhite);
     flex-grow: 1;
 }
-.email-communication,.phone-communication{
+.main__contact__communication__item--bold-grey{
     background-color: var(--boldGrey);
 }
-.location{
+.main__contact__communication__item--turquoise-blue{
     background-color: var(--turquoiseBlue);
 }
-.contact-communication div p{
+.main__contact__communication__item__paragraph{
     margin-bottom: 0px;
 }
-.form-data{
+.main__form-data{
     padding-inline: 20px;
     background-color: var(--paleGrey);
     font-weight: 600;
 }
-.form-data form{
+.main__form-data__form{
     border-top: .5px solid var(--customWhite);
     padding-block: 25px;
     display: flex;
     flex-wrap: wrap;
     row-gap: 18px;
 }
-.name-input  ,.email-input ,.message-input{
+.main__form-data__form__box{
     width: 100%;
 }
-.name-input input,.email-input input,.message-input input{
+.main__form-data__form__box__input{
     display: block;
     width: 100%;
     padding: 12px;
 }
-.send-message-btn{
+.main__form-data__form__button{
     display: block;
     padding: 12px;
     background-color: black;
@@ -487,14 +481,14 @@ main{
     cursor: pointer;
     border: 0;
 }
-.send-message-btn:hover{
+.main__form-data__form__button:hover{
     background-color: var(--customGrey);
     color: black;
 }
-.send-message-btn i{
+.main__form-data__form__button__icon{
     padding-inline: 5px;
 }
-.top-footer{
+.footer__top{
     padding: 40px 30px;
     background-color: var(--boldGrey) ;
     display: flex;
@@ -502,46 +496,46 @@ main{
     gap: 15px;
     color: var(--customWhite);
 }
-.top-footer-section{
+.footer__top__item{
     width: 33%;
 }
-.top-footer-section p a{
+.footer__top__item__paragraph__link{
     color: var(--customWhite);
 }
-.top-footer-section .blog-post img{
+.footer__top__item__blog__image{
     width: 60px;
     height: 60px;
     float: left;
     margin-right: 20px;
 }
-.top-footer-section .blog-post:last-child{
+.footer__top__item__blog--secondary{
     border-top: 1px solid var(--customWhite);
 }
-.blog-post{
+.footer__top__item__blog{
     padding: 15px 20px;
 }
-.tags div{
+.footer__top__item__tags__item{
     background-color: var(--paleGrey);
     color: black;
     padding: 2px 8px;
 }
-.tags{
+.footer__top__item__tags{
     display: flex;
     flex-wrap: wrap;
     column-gap: 5px;
     row-gap: 25px;
 }
-.tags div:first-child{
+.footer__top__item__tags__item--primary{
     background-color: black;
     color: var(--customWhite);
     
 }
-.buttom-footer{
+.footer__bottom{
     padding: 35px;
     background-color: black;
     color: var(--customWhite);
     text-align: center;
 }
-.buttom-footer a{
+.footer__bottom__link{
     color: var(--customWhite);
 }

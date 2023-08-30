@@ -1,395 +1,589 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="../styles/style.css">
-  <link rel="stylesheet" href="../styles/animations.css">
-  <link rel="stylesheet" href="../styles/mobile-design.css">
-  <link rel="stylesheet" href="../styles/tablet-design.css">
-  <script src="../scripts/timer.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/animations.css" />
+    <link rel="stylesheet" href="../styles/mobile-design.css" />
+    <link rel="stylesheet" href="../styles/tablet-design.css" />
+    <script src="../scripts/weather.js" defer></script>
   </head>
-<body>
-  
-  
-    <aside id="bar-icon-visibility">
-      
-      <div class="aside-first-section">
-        <div class="avatar-image-remove-icon">
-          <img src="../images/avatar.jpg" alt="">
-        <a class="fa fa-remove remove-icon" href="#bar-icon-disable"></a>
+  <body>
+    <aside id="bar-icon-visibility" class="sidebar">
+      <div class="sidebar__content">
+        <div class="sidebar__content__avatar">
+          <img
+            class="sidebar__content__avatar__image"
+            src="../images/avatar.jpg"
+            alt=""
+          />
+          <a
+            class="fa fa-remove sidebar__content__avatar__icon--disable"
+            href="#bar-icon-disable"
+          ></a>
         </div>
-      <h4><strong>PORTFOLIO</strong></h4>
-      <p class="text-grey">Template by W3.CSS</p>
+        <h4><strong>PORTFOLIO</strong></h4>
+        <p class="text-grey">Template by W3.CSS</p>
       </div>
-      
-      <nav>
-        <ul >
-          <li>
-            <a class="portfolio-icon" href="#porfolio-nav">
-              <i class="fa fa-th-large"></i>
+
+      <nav class="sidebar__nav">
+        <ul class="sidebar__nav__list">
+          <li class="sidebar__nav__list__item">
+            <a
+              class="sidebar__nav__list__item__link sidebar__nav__list__item__link--blue"
+              href="#porfolio-nav"
+            >
+              <i
+                class="fa fa-th-large sidebar__nav__list__item__link__icon"
+              ></i>
               PORTFOLIO
             </a>
           </li>
-          
-          <li>
-            <a  href="#about" class="about-icon">
-              <i class="fa 	fa-user"></i>
+
+          <li class="sidebar__nav__list__item">
+            <a
+              class="sidebar__nav__list__item__link sidebar__nav__list__item__link--lage"
+              href="#about"
+              class="about-icon"
+            >
+              <i class="fa fa-user sidebar__nav__list__item__link__icon"></i>
               ABOUT
             </a>
           </li>
-          
-          <li>
-            <a  href="#contact-me" class="contact-me-icon">
-              <i class="fa fa-envelope fa-"></i>
+
+          <li class="sidebar__nav__list__item">
+            <a
+              class="sidebar__nav__list__item__link"
+              href="#contact-me"
+              class="contact-me-icon"
+            >
+              <i
+                class="fa fa-envelope fa- sidebar__nav__list__item__link__icon"
+              ></i>
               CONTACT
             </a>
-          
           </li>
         </ul>
       </nav>
 
       <div class="social">
-        <div>
-            <i class="fa fa-facebook-official"></i>
+        <div class="social__item">
+          <i class="fa fa-facebook-official social__item__icon"></i>
         </div>
-        <div>
-          <i class="fa fa-instagram"></i>
+        <div class="social__item">
+          <i class="fa fa-instagram social__item__icon"></i>
         </div>
-        <div>
-            <i class="fa fa-snapchat"></i>
+        <div class="social__item">
+          <i class="fa fa-snapchat social__item__icon"></i>
         </div>
-        <div>
-            <i class="fa fa-pinterest"></i>
+        <div class="social__item">
+          <i class="fa fa-pinterest social__item__icon"></i>
         </div>
-        <div>
-          <i class="fa fa-twitter"></i>
+        <div class="social__item">
+          <i class="fa fa-twitter social__item__icon"></i>
         </div>
-        <div>
-            <i class="fa fa-linkedin"></i>
+        <div class="social__item">
+          <i class="fa fa-linkedin social__item__icon"></i>
         </div>
       </div>
     </aside>
 
-    <main>
-      <a class="close-side-menu" title="close the side menu" href="#bar-icon-disable"></a>
-      <section class="top-header" id="porfolio-nav">
-        
-        <div class="small-device">
-          <a class="fa fa-bars bar-icon" href="#bar-icon-visibility"></a>
-          <img src="../images/avatar.jpg" alt="">
+    <main class="main">
+      <a
+        class="main__close-side-menu"
+        title="close the side menu"
+        href="#bar-icon-disable"
+      ></a>
+      <section class="main__header" id="porfolio-nav">
+        <div class="main__header__hide-section">
+          <a
+            class="fa fa-bars bar-icon main__header__hide-section__icon"
+            href="#bar-icon-visibility"
+          ></a>
+          <img
+            src="../images/avatar.jpg"
+            alt="this is avatar image"
+            class="main__header__hide-section__image"
+          />
         </div>
-        <header >
-          <h1>My Portfolio</h1>
-        </header>
-        
-        <section class="filter">
 
-          <div>
-            Filter:
-          </div>
-          <button class="filter-all">
+        <h1 class="main__header__heading">My Portfolio</h1>
+
+        <section class="main__header__filter">
+          <div class="main__header__filter__item--primary">Filter:</div>
+          <button
+            class="main__header__filter__item main__header__filter__item--secondary"
+          >
             ALL
           </button>
-          <button class="filter-design">
-            <i class="fa fa-diamond"></i>
+          <button class="filter-design main__header__filter__item">
+            <i class="fa fa-diamond main__header__filter__item__icon"></i>
             Design
           </button>
-          <button class="filter-photo">
-            <i class="fa fa-image"></i>
+          <button
+            class="filter-photo main__header__filter__item main__header__filter__item--unvisible"
+          >
+            <i class="fa fa-image main__header__filter__item__icon"></i>
             Photos
           </button>
-          <button class="filter-art">
-            <i class="fa fa-map-pin"></i>
+          <button
+            class="filter-art main__header__filter__item main__header__filter__item--unvisible"
+          >
+            <i class="fa fa-map-pin main__header__filter__item__icon"></i>
             Art
           </button>
         </section>
       </section>
 
-      <section class="main-images">
-          <div class="main-image-box">
-
-            <img src="../images/mountains.jpg" alt="this is first nature picture">
-            <div>
-              <h5><strong>Lorem Ipsum</strong></h5>
-              <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-            </div>
-
-          </div>
-
-
-          <div class="main-image-box">
-            <img src="../images/lights.jpg" alt="this is ">
-            <div>
-              <h5><strong>Lorem Ipsum</strong></h5>
-              <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-            </div>
-          </div>
-
-          <div class="main-image-box">
-
-            <img src="../images/nature.jpg" alt="this is ">
-            <div>
-              <h5><strong>Lorem Ipsum</strong></h5>
-              <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-            </div>
-
-          </div>
-          <div class="main-image-box">
-
-            <img src="../images/p1.jpg" alt="this is ">
-            <div>
-              <h5><strong>Lorem Ipsum</strong></h5>
-              <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-            </div>
-
-          </div>
-          
-          <div class="main-image-box">
-
-            <img src="../images/p2.jpg" alt="this is ">
-            <div>
-              <h5><strong>Lorem Ipsum</strong></h5>
-              <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-            </div>
-
-          </div>
-          <div class="main-image-box">
-
-            <img src="../images/p3.jpg" alt="this is ">
-            <div>
-              <h5><strong>Lorem Ipsum</strong></h5>
-              <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-            </div>
-
-          </div>
-      </section>
-
-      <section class="pagination">
-        <div><a class="last-page" href=""><<</a></div>
-        <div><a class="page-one" href="">1</a></div>
-        <div><a class="page-two" href="">2</a></div>
-        <div><a class="page-three" href="">3</a></div>
-        <div><a class="page-four" href="">4</a></div>
-        <div><a class="next-page" href="">>></a></div>
-      </section>
-
-      <section class="about-me" id="about">
-
-        <div class="picture">
-
-          <div>
-            <img src="../images/personal-image1.jpg" alt="">
-          </div>
-          <div>
-            <img src="../images/personal-image2.jpg" alt="">
+      <section class="main__card">
+        <div class="main__card__item">
+          <img
+            class="main__card__item__image"
+            src="../images/mountains.jpg"
+            alt="this is first nature picture"
+          />
+          <div class="main__card__item__content">
+            <h5><strong>Lorem Ipsum</strong></h5>
+            <p>
+              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+              condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.
+            </p>
           </div>
         </div>
 
-        <h3>About Me</h4>
-        <p>
-          Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+        <div class="main__card__item">
+          <img
+            class="main__card__item__image"
+            src="../images/lights.jpg"
+            alt="this is image one"
+          />
+          <div class="main__card__item__content">
+            <h5><strong>Lorem Ipsum</strong></h5>
+            <p>
+              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+              condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.
+            </p>
+          </div>
+        </div>
+
+        <div class="main__card__item">
+          <img
+            class="main__card__item__image"
+            src="../images/nature.jpg"
+            alt="this is "
+          />
+          <div class="main__card__item__content">
+            <h5><strong>Lorem Ipsum</strong></h5>
+            <p>
+              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+              condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.
+            </p>
+          </div>
+        </div>
+        <div class="main__card__item">
+          <img
+            class="main__card__item__image"
+            src="../images/p1.jpg"
+            alt="this is "
+          />
+          <div class="main__card__item__content">
+            <h5><strong>Lorem Ipsum</strong></h5>
+            <p>
+              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+              condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.
+            </p>
+          </div>
+        </div>
+
+        <div class="main__card__item">
+          <img
+            class="main__card__item__image"
+            src="../images/p2.jpg"
+            alt="this is "
+          />
+          <div class="main__card__item__content">
+            <h5><strong>Lorem Ipsum</strong></h5>
+            <p>
+              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+              condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.
+            </p>
+          </div>
+        </div>
+        <div class="main__card__item">
+          <img
+            class="main__card__item__image"
+            src="../images/p3.jpg"
+            alt="this is "
+          />
+          <div class="main__card__item__content">
+            <h5><strong>Lorem Ipsum</strong></h5>
+            <p>
+              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+              condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__pagination">
+        <div>
+          <a
+            class="main__pagination_item main__pagination_item--non-default"
+            href=""
+            ><<</a
+          >
+        </div>
+        <div>
+          <a
+            class="main__pagination_item main__pagination_item--default"
+            href=""
+            >1</a
+          >
+        </div>
+        <div>
+          <a
+            class="main__pagination_item main__pagination_item--non-default"
+            href=""
+            >2</a
+          >
+        </div>
+        <div>
+          <a
+            class="main__pagination_item main__pagination_item--non-default"
+            href=""
+            >3</a
+          >
+        </div>
+        <div>
+          <a
+            class="main__pagination_item main__pagination_item--non-default"
+            href=""
+            >4</a
+          >
+        </div>
+        <div>
+          <a
+            class="main__pagination_item main__pagination_item--non-default"
+            href=""
+            >>></a
+          >
+        </div>
+      </section>
+
+      <section class="main__about-me" id="about">
+        <div class="main__about-me__pictures">
+          <div class="main__about-me__pictures__item">
+            <img
+              class="main__about-me__pictures__item__image"
+              src="../images/personal-image1.jpg"
+              alt=""
+            />
+          </div>
+          <div class="main__about-me__pictures__item">
+            <img
+              class="main__about-me__pictures__item__image"
+              src="../images/personal-image2.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <h3 class="main__about-me__header">About Me</h3>
+        <p class="main__about-me__paragraph">
+          Just me, myself and I, exploring the universe of unknownment. I have a
+          heart of love and an interest of lorem ipsum and mauris neque quam
+          blog. I want to share my world with you. Praesent tincidunt sed tellus
+          ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
+          congue gravida diam non fringilla. Praesent tincidunt sed tellus ut
+          rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
+          congue gravida diam non fringilla.
         </p>
-        
-        
-        <section class="skill">
-            <h4>Technical Skills</h4>
 
-            <p>Photography</p>
-            <div class="skill-flex photography-skill">
-                <div>95%</div>
-                <div></div>
-            </div>
-            
-            <p>Web Design</p>
-            <div class="skill-flex Web-design-skill">
-              <div>85%</div>
-              <div></div>
-            </div>
+        <section class="main__about-me__skill">
+          <h4>Technical Skills</h4>
 
-            <p>photoshop</p>
-            <div class="skill-flex photoshop-skill">
-              <div>80%</div>
-              <div></div>
+          <p>Photography</p>
+          <div class="main__about-me__skill__item">
+            <div
+              class="main__about-me__skill__item__progress main__about-me__skill__item__progress--bold-grey main__about-me__skill__item__progress--size-95"
+            >
+              95%
             </div>
+            <div
+              class="main__about-me__skill__item__progress main__about-me__skill__item__progress--pale-grey main__about-me__skill__item__progress--size-5"
+            ></div>
+          </div>
 
-          
+          <p>Web Design</p>
+          <div class="main__about-me__skill__item">
+            <div
+              class="main__about-me__skill__item__progress main__about-me__skill__item__progress--bold-grey main__about-me__skill__item__progress--size-85"
+            >
+              85%
+            </div>
+            <div
+              class="main__about-me__skill__item__progress main__about-me__skill__item__progress--pale-grey main__about-me__skill__item__progress--size-15"
+            ></div>
+          </div>
+
+          <p>photoshop</p>
+          <div class="main__about-me__skill__item">
+            <div
+              class="main__about-me__skill__item__progress main__about-me__skill__item__progress--bold-grey main__about-me__skill__item__progress--size-80"
+            >
+              80%
+            </div>
+            <div
+              class="main__about-me__skill__item__progress main__about-me__skill__item__progress--pale-grey main__about-me__skill__item__progress--size-20"
+            ></div>
+          </div>
         </section>
 
-        <section class="resume">
-
-          <a href="../util/mohammad-nasr-resume.pdf" target="_blank" >
-            <i class="fa fa-download"></i>
+        <section class="main__resume">
+          <a
+            href="../util/mohammad-nasr-resume.pdf"
+            class="main__resume__link"
+            target="_blank"
+          >
+            <i class="fa fa-download main__resume__link__icon"></i>
             Download Resume
           </a>
         </section>
       </section>
 
-      <section class="charge">
-          <h2>How much I charge</h2>
+      <section class="main__charge">
+        <h2>How much I charge</h2>
 
-          <div class="sales-panel">
-            <div class="basic-panel">
-                <p class="sale-panel-type">Basic</p>
-                <div class="panel-services">Web Design</div>
-                <div class="panel-services">Photography</div>
-                <div class="panel-services">1GB Storage</div>
-                <div class="panel-services">Mail Support</div>
-                <div class="panel-price">
-
-                  <div>$ 10</div>
-                  <p>per month</p>
-                </div>
-
-                <div class="sign-up">
-                    <div>
-                      <a href="">Sign Up</a>
-                    </div>
-                </div>
+        <div class="main__charge__sales-panel">
+          <div
+            class="main__charge__sales-panel__item main__charge__sales-panel__item--basic"
+          >
+            <p
+              class="main__charge__sales-panel__item__type main__charge__sales-panel__item__type--black"
+            >
+              Basic
+            </p>
+            <div class="main__charge__sales-panel__item__services">
+              Web Design
+            </div>
+            <div class="main__charge__sales-panel__item__services">
+              Photography
+            </div>
+            <div class="main__charge__sales-panel__item__services">
+              1GB Storage
+            </div>
+            <div class="main__charge__sales-panel__item__services">
+              Mail Support
+            </div>
+            <div class="main__charge__sales-panel__item__price">
+              <div class="main__charge__sales-panel__item__price__item">
+                $ 10
+              </div>
+              <p>per month</p>
             </div>
 
-
-            <div class="pro-panel">
-
-              <p class="sale-panel-type">Pro</p>
-              <div class="panel-services">Web Design</div>
-              <div class="panel-services">Photography</div>
-              <div class="panel-services">50GB Storage</div>
-              <div class="panel-services">Endless Support</div>
-              <div class="panel-price">
-
-                <div>$ 25</div>
-                <p>per month</p>
-              </div>
-
-              <div class="sign-up">
-                  <div>
-                    <a href="">Sign Up</a>
-                  </div>
-              </div>
-
-            </div>
-            
-            <div class="premium-panel">
-
-              <p class="sale-panel-type">Premium</p>
-              <div class="panel-services">Web Design</div>
-              <div class="panel-services">Photography</div>
-              <div class="panel-services">1GB Storage</div>
-              <div class="panel-services">Unlimited Support</div>
-              <div class="panel-price">
-
-                <div>$ 25</div>
-                <p>per month</p>
-              </div>
-
-              <div class="sign-up">
-                  <div>
-                    <a href="">Sign Up</a>
-                  </div>
-              </div>
-
+            <div class="main__charge__sales-panel__item__sign-up">
+              <a class="main__charge__sales-panel__item__sign-up__link" href=""
+                >Sign Up</a
+              >
             </div>
           </div>
-      </section>
 
-      <section class="contact" id="contact-me">
-        <h3>Contact Me</h3>
-        <div class="contact-communication">
-          <div class="email-communication">
-            <i class="fa fa-envelope fa-2x"></i>
-            <p>email@email.com</p>
+          <div
+            class="main__charge__sales-panel__item main__charge__sales-panel__item--pro"
+          >
+            <p
+              class="main__charge__sales-panel__item__type main__charge__sales-panel__item__type--blue"
+            >
+              Pro
+            </p>
+            <div class="main__charge__sales-panel__item__services">
+              Web Design
+            </div>
+            <div class="main__charge__sales-panel__item__services">
+              Photography
+            </div>
+            <div class="main__charge__sales-panel__item__services">
+              50GB Storage
+            </div>
+            <div class="main__charge__sales-panel__item__services">
+              Endless Support
+            </div>
+            <div class="main__charge__sales-panel__item__price">
+              <div class="main__charge__sales-panel__item__price__item">
+                $ 25
+              </div>
+              <p>per month</p>
+            </div>
+
+            <div class="main__charge__sales-panel__item__sign-up">
+              <a class="main__charge__sales-panel__item__sign-up__link" href=""
+                >Sign Up</a
+              >
+            </div>
           </div>
-          <div class="location">
-            <i class="fa fa-map-marker fa-2x"></i>
-            <p>Chicago, US</p>
-          </div>
-          <div class="phone-communication">
-            <i class="fa fa-phone fa-2x"></i>
-            <p>512312311</p>
+
+          <div
+            class="main__charge__sales-panel__item main__charge__sales-panel__item--pro"
+          >
+            <p
+              class="main__charge__sales-panel__item__type main__charge__sales-panel__item__type--black"
+            >
+              Premium
+            </p>
+            <div class="main__charge__sales-panel__item__services">
+              Web Design
+            </div>
+            <div class="main__charge__sales-panel__item__services">
+              Photography
+            </div>
+            <div class="main__charge__sales-panel__item__services">
+              1GB Storage
+            </div>
+            <div class="main__charge__sales-panel__item__services">
+              Unlimited Support
+            </div>
+            <div class="main__charge__sales-panel__item__price">
+              <div class="main__charge__sales-panel__item__price__item">
+                $ 25
+              </div>
+              <p>per month</p>
+            </div>
+
+            <div class="main__charge__sales-panel__item__sign-up">
+              <a class="main__charge__sales-panel__item__sign-up__link" href=""
+                >Sign Up</a
+              >
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="form-data">
-        <form action="">
-
-          <div class="name-input">
-            <label for="name">Name</label>
-            <input id="name" type="text">
+      <section class="main__contact" id="contact-me">
+        <h3 class="main__contact__header">Contact Me</h3>
+        <div class="main__contact__communication">
+          <div class="main__contact__communication__item--bold-grey main__contact__communication__item">
+            <i class="fa fa-envelope fa-2x"></i>
+            <p class="main__contact__communication__item__paragraph">email@email.com</p>
           </div>
-
-          <div class="email-input">
-            <label for="email">Email</label>
-            <input id="email" type="email">
+          <div class="main__contact__communication__item--turquoise-blue main__contact__communication__item">
+            <i class="fa fa-map-marker fa-2x"></i>
+            <p class="main__contact__communication__item__paragraph">Chicago, US</p>
           </div>
-
-          <div class="message-input">
-            <label for="message">Message</label>
-            <input id="message" type="text">
+          <div class="main__contact__communication__item--bold-grey main__contact__communication__item">
+            <i class="fa fa-phone fa-2x"></i>
+            <p class="main__contact__communication__item__paragraph">512312311</p>
           </div>
-
-          <button class="send-message-btn">
-            <i class="fa fa-paper-plane"></i>
-            Send Message
-          </button>
-
-        </form>
+        </div>
       </section>
 
+      <section class="main__form-data">
+        <form class="main__form-data__form" action="">
+          <div class="main__form-data__form__box">
+            <label for="name">Name</label>
+            <input class="main__form-data__form__box__input" id="name" type="text" />
+          </div>
+
+          <div class="main__form-data__form__box">
+            <label for="email">Email</label>
+            <input class="main__form-data__form__box__input" id="email" type="email" />
+          </div>
+
+          <div class="main__form-data__form__box">
+            <label for="message">Message</label>
+            <input class="main__form-data__form__box__input" id="message" type="text" />
+          </div>
+
+          <button class="main__form-data__form__button">
+            <i class="fa fa-paper-plane main__form-data__form__button__icon"></i>
+            Send Message
+          </button>
+        </form>
+      </section>
     </main>
 
-    <footer>
-      <section class="top-footer">
-          <div class="top-footer-section">
-            <h2>FOOTER</h2>
-            <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a></p>
+    <footer class="footer">
+      <section class="footer__top">
+        <div class="footer__top__item">
+          <h2>FOOTER</h2>
+          <p class="footer__top__item__paragraph">
+            Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+            condimentum, porta lectus vitae, ultricies congue gravida diam non
+            fringilla.
+          </p>
+          <p class="footer__top__item__paragraph">
+            Powered by
+            <a class="footer__top__item__paragraph__link" href="https://www.w3schools.com/w3css/default.asp">w3.css</a>
+          </p>
+        </div>
+
+        <div class="footer__top__item">
+          <h2>BLOG POSTS</h2>
+          <div class="footer__top__item__blog">
+            <img
+              class="footer__top__item__blog__image"
+              src="../images/workshop.jpg"
+              width="100px"
+              height="100px"
+              alt=""
+            />
+            <p>
+              Lorem <br />
+              Sed mattis nunc
+            </p>
           </div>
-
-          <div class="top-footer-section">
-            <h2>BLOG POSTS</h2>
-              <div class="blog-post">
-                    <img src="../images/workshop.jpg" width="100px" height="100px" alt="">
-                    <p >Lorem <br>
-                    Sed mattis nunc</p>
-                  </div>
-                  <div class="blog-post">  
-                  <img src="../images/gondol.jpg" width="100px" height="100px" alt="">
-                  <p >Ipsum <br>
-                  Praes tinci sed</p>
-
-                  </div>
-              </div>
-
-              
-          <div class="top-footer-section">
-            <h2>POPULAR TAGS</h2>
-              <div class="tags">
-                <div>Travel</div>
-                <div>New York</div>
-                <div>London</div>
-                <div>IKEA</div>
-                <div>NORWAY</div>
-                <div>DIY</div>
-                <div>Ideas</div>
-                <div>Baby</div>
-                <div>Family</div>
-                <div>News</div>
-                <div>Clothing</div>
-                <div>Shopping</div>
-                <div>Sports</div>
-                <div>Games</div>
-              </div>
+          <div class="footer__top__item__blog footer__top__item__blog--secondary">
+            <img
+              class="footer__top__item__blog__image"
+              src="../images/gondol.jpg"
+              width="100px"
+              height="100px"
+              alt=""
+            />
+            <p>
+              Ipsum <br />
+              Praes tinci sed
+            </p>
           </div>
-          </section>
-          
-          <section class="buttom-footer">
-            Powered by <a href="">w3.css</a>
-          </section>
-  </footer>
-</body>
+        </div>
+
+        <div class="footer__top__item">
+          <h2>POPULAR TAGS</h2>
+          <div class="footer__top__item__tags">
+            <div class="footer__top__item__tags__item footer__top__item__tags__item--primary">Travel</div>
+            <div class="footer__top__item__tags__item">New York</div>
+            <div class="footer__top__item__tags__item">London</div>
+            <div class="footer__top__item__tags__item">IKEA</div>
+            <div class="footer__top__item__tags__item">NORWAY</div>
+            <div class="footer__top__item__tags__item">DIY</div>
+            <div class="footer__top__item__tags__item">Ideas</div>
+            <div class="footer__top__item__tags__item">Baby</div>
+            <div class="footer__top__item__tags__item">Family</div>
+            <div class="footer__top__item__tags__item">News</div>
+            <div class="footer__top__item__tags__item">Clothing</div>
+            <div class="footer__top__item__tags__item">Shopping</div>
+            <div class="footer__top__item__tags__item">Sports</div>
+            <div class="footer__top__item__tags__item">Games</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="footer__bottom">
+        Powered by <a class="footer__bottom__link" href="">w3.css</a>
+      </section>
+    </footer>
+  </body>
 </html>

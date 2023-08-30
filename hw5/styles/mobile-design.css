@@ -1,47 +1,47 @@
 @media screen and (max-width:600px) {
-    aside{
+    .sidebar{
         display: none;
     }
-    main{
+    .main{
         width: 100%;
     }
-    .small-device{
+    .main__header__hide-section{
         display: flex;
         justify-content: space-between;
     }
-    footer{
+    .footer{
         width: 100%;
     }
-    .filter-photo , .filter-art{
+    .main__header__filter__item--unvisible{
         display: none;
     }
-    .main-image-box{
+    .main__card__item{
         width: 100%;
     }
-    .picture{
+    .main__about-me__pictures{
         flex-wrap: wrap;
         gap: 0px;
     }
-    .picture div{
+    .main__about-me__pictures__item{
         width: 100%;
     }
     .sales-panel{
         flex-wrap: wrap;
     }
-    .basic-panel,.pro-panel,.premium-panel{
+    .main__charge__sales-panel__item{
         width: 100%;
     }
-    .contact-communication{
+    .main__contact__communication{
         flex-wrap: wrap;
     }
-    .email-communication,.location,.phone-communication{
+    .main__contact__communication__item{
         width: 100%;
     }
 
-    .top-footer{
+    .footer__top{
         flex-wrap: wrap;
     }
-    .top-footer-section{
+    .footer__top__item{
         width: 100%;
     }
 }
