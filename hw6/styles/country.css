@@ -1,0 +1,11 @@
+#countries {
+  width: 600px;
+  border: 1px solid black;
+}
+#countries td {
+  border: 1px solid black;
+  padding-block: 10px;
+}
+#countries th {
+  border: 1px solid black;
+}/*# sourceMappingURL=country.css.map */
