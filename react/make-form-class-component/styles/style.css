@@ -1,0 +1,38 @@
+body {
+  background-color: rgb(39, 131, 212);
+}
+* {
+  box-sizing: border-box;
+}
+.signin-form {
+  width: 500px;
+  margin: 100px auto;
+  color: white;
+}
+.input-section {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+.input-section input {
+  width: 100%;
+  padding: 6px;
+  border-radius: 5px;
+  border: 0px;
+}
+.submit-section {
+  display: flex;
+  justify-content: center;
+}
+input[type="submit"] {
+  padding: 8px 12px;
+  cursor: pointer;
+  background-color: rgb(54, 183, 54);
+  border-radius: 5px;
+  color: white;
+  border: 0px;
+}
+input[type="submit"]:hover {
+  background-color: green;
+  color: black;
+}
