@@ -1,0 +1,61 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: grey;
+}
+.container{
+  width: 80%;
+  margin: 100px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.box{
+  width: calc(30% - 20px);
+  height: 200px;
+  padding-inline-start: 10px;
+  box-shadow: 5px 5px 10px black;
+  cursor: pointer;
+}
+.box1{
+  transform: rotate(-8deg);
+  background-color: burlywood;
+}
+.box2{
+  transform: rotate(4deg);
+  background-color: rgb(102, 232, 187);
+}
+.box3{
+  transform: rotate(-4deg);
+  background-color: rgb(197, 130, 241);
+  position: relative;
+  top:-7px;
+}
+.box4{
+  transform: rotateX(10deg);
+  transform: rotate(4deg);
+  background-color: rgb(102, 232, 187);
+}
+.box5{
+  transform: rotate(4deg);
+  background-color: burlywood;
+  position: relative;
+  top: -15px;
+
+}
+.box6{
+  transform: rotate(-4deg);
+  background-color: rgb(197, 130, 241);
+  position: relative;
+  top: -15px;
+}
+
+@media screen and (max-width:400px){
+  body{
+      font-size: .6rem;
+  }
+}
+.box:hover{
+  transform: scale(1.1);
+}
