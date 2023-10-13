@@ -1,3 +1,5 @@
+$link-color:rgb(223, 216, 216);
+
 .heading {
 background-color: white;
   position: sticky;
@@ -7,7 +9,10 @@ background-color: white;
   padding: 10px 20px;
   gap: 40px;
 
-//   border: 2px solid black;
+
+  &__image{
+    cursor: pointer;
+  }
 
   &__list {
     margin: 0px;
@@ -30,6 +35,10 @@ background-color: white;
         align-items: center;
         border-radius: 5px;
 
+        &:hover{
+            background-color: $link-color;
+        }
+
       }
     }
   }
@@ -51,6 +60,10 @@ background-color: white;
 
         height: 100%;
         
+        &:hover{
+            background-color: $link-color;
+
+        }
 
     }
   }
