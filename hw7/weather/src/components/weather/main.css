@@ -1,0 +1,31 @@
+.city-container {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: dodgerblue;
+}
+
+.container {
+  width: 500px;
+  margin: 100px auto;
+  background-color: rgba(200, 195, 195, 0.9);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 5px;
+  gap: 10px;
+}
+.container .heading {
+  color: chocolate;
+}
+
+.selected-city__item {
+  padding: 5px;
+}/*# sourceMappingURL=main.css.map */
