@@ -1,0 +1,90 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    background-image: url('sketch-3-todo-list-app-icon-template.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.container{
+    width: 500px;
+    margin: 100px auto;
+
+    &__heading{
+        text-align: center;
+        font-family: sans-serif;
+    }
+
+    &__form{
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border: 2px solid black;
+        background-color: rgb(220, 214, 214,.3);
+        padding: 10px;
+        border-radius: 5px;
+
+        & > input{
+            padding-block: 10px;
+            border-radius: 5px;
+            padding-inline-start: 10px;
+            font-weight: 500;
+            background-color: rgb(241, 234, 234);
+            font-size: 1rem;
+            
+        }
+        &__button{
+
+            &--submit{
+                background-color: rgb(28, 114, 242) !important;
+                color: black;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__carts {
+
+        margin-block-start: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    
+        &__item{
+            padding: 30px 10px;
+            border: 2px solid black;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;    
+            background-color: rgb(220, 214, 214,.3);
+
+        
+            &__links{
+                display: flex;
+                gap: 5px;
+                
+                :first-child{
+                    background-color: greenyellow;
+                    color: black;   
+                }
+
+                :last-child{
+                    background-color: crimson;
+                    color: white;
+                }
+                a{
+                    text-decoration: none;
+                    padding: 5px 8px;
+                    border-radius: 4px;
+                    
+                }
+            }
+        }
+    }
+}
