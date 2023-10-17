@@ -1,0 +1,41 @@
+version: '3.7'
+services:
+  app:
+    container_name: todo-backend-container
+    build:
+      context: ./todo-backend    
+
+    ports:
+      - "8080:8080"
+
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/todo
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: 123456
+
+    depends_on:
+      - db
+  db:
+    image: "postgres:13.1-alpine"
+    container_name: postgresql-newcontainer
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=123456
+      - POSTGRES_DB=todo
+    
+
+    volumes:
+      - db_volume:/var/lib/postgresql/data/
+
+  todo-front:
+    build:
+      context: ./app
+    container_name: todo-front-container
+    depends_on:
+      - app
+
+    ports:
+      - "3000:3000"
+
+volumes:
+  db_volume:
