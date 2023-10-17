@@ -1,6 +1,8 @@
 import { useEffect, useReducer, useRef, useState } from "react";
 import "./main.css";
 
+const baseUrl = 'http://localhost:8080';
+
 function TodoObject(title, description) {
   this.title = title;
   this.description = description;
@@ -23,6 +25,8 @@ const reducerFunction = (state, action) => {
 };
 
 export default function Todo() {
+
+
   const [todos, dispatch] = useReducer(reducerFunction, []);
 
   const [mode, setMode] = useState("insert");
@@ -39,7 +43,7 @@ export default function Todo() {
         descriptionInput.current.value
       );
 
-      fetch("http://localhost:8080/todo", {
+      fetch(`${baseUrl}/todo`, {
         method: "POST",
         body: JSON.stringify(todo),
         headers: {
@@ -54,7 +58,7 @@ export default function Todo() {
         description: descriptionInput.current.value,
       };
 
-      fetch(`http://localhost:8080/todo/${editedItemId.current}`, {
+      fetch(`${baseUrl}/${editedItemId.current}`, {
         method: "PUT",
         body: JSON.stringify(body),
         headers: {
@@ -80,7 +84,7 @@ export default function Todo() {
   };
 
   const deleteTodoHandler = (id) => {
-    fetch(`http://localhost:8080/todo/${id}`, {
+    fetch(`${baseUrl}/todo/${id}`, {
       method: "DELETE",
       headers: {
         "content-type": "application/json",
@@ -93,7 +97,7 @@ export default function Todo() {
   };
 
   useEffect(() => {
-    fetch("http://localhost:8080/todo/all")
+    fetch(`${baseUrl}/todo/all`)
       .then((response) => response.json())
       .then((data) => dispatch({ type: "initial", payload: data }));
   }, []);
@@ -150,7 +154,7 @@ export default function Todo() {
           )}
         </form>
 
-        <section className="container__carts">{data};</section>
+        <section className="container__carts">{data}</section>
       </div>
     </>
   );
