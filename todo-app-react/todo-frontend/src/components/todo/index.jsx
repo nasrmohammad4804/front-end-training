@@ -1,7 +1,8 @@
 import { useEffect, useReducer, useRef, useState } from "react";
-import "./main.css";
+import "./main.scss";
+import React from "react";
 
-const baseUrl = 'http://localhost:8080';
+const baseUrl = process.env.REACT_APP_BASE_URL;
 
 function TodoObject(title, description) {
   this.title = title;
@@ -26,6 +27,7 @@ const reducerFunction = (state, action) => {
 
 export default function Todo() {
 
+  console.log(baseUrl);
 
   const [todos, dispatch] = useReducer(reducerFunction, []);
 

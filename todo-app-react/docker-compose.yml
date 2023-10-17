@@ -29,7 +29,7 @@ services:
 
   todo-front:
     build:
-      context: ./app
+      context: ./todo-frontend
     container_name: todo-front-container
     depends_on:
       - app
