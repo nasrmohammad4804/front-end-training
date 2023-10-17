@@ -40,10 +40,18 @@ body{
         }
         &__button{
 
-            &--submit{
-                background-color: rgb(28, 114, 242) !important;
+            &__submit{
+
                 color: black;
                 cursor: pointer;
+
+                &--blue{
+                    background-color: rgb(28, 114, 242) !important;
+                }
+
+                &--green{
+                    background-color: rgb(14, 173, 14) !important;
+                }
             }
         }
     }

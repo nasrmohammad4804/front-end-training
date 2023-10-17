@@ -60,7 +60,7 @@ export default function Todo() {
         description: descriptionInput.current.value,
       };
 
-      fetch(`${baseUrl}/${editedItemId.current}`, {
+      fetch(`${baseUrl}/todo/${editedItemId.current}`, {
         method: "PUT",
         body: JSON.stringify(body),
         headers: {
@@ -142,14 +142,14 @@ export default function Todo() {
 
           {mode === "insert" ? (
             <input
-              className="container__form__button--submit"
+              className="container__form__button__submit container__form__button__submit--blue"
               type="submit"
               value="create"
             />
           ) : (
             <input
-              style={{ backgroundColor: "greenyellow" }}
-              className="container__form__button--submit"
+              
+              className="container__form__button__submit container__form__button__submit--green"
               type="submit"
               value="edit"
             />
