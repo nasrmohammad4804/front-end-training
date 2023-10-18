@@ -27,10 +27,7 @@ const reducerFunction = (state, action) => {
 
 export default function Todo() {
 
-  console.log(baseUrl);
-
   const [todos, dispatch] = useReducer(reducerFunction, []);
-
   const [mode, setMode] = useState("insert");
   const editedItemId = useRef(null);
   const titleInput = useRef(null);
