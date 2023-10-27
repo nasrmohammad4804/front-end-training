@@ -1,0 +1,17 @@
+.button{
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding-inline: 25px;
+    padding-block: 10px;
+    
+
+
+    &__content{
+        color: #173640;
+        font-weight: 600;
+    }
+}
