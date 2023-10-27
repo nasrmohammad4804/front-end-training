@@ -1,0 +1,21 @@
+
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #173640;
+}
+.header{
+    display: flex;
+    padding: 40px 150px;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: #173640;
+
+}
