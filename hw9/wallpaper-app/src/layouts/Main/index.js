@@ -15,8 +15,6 @@ import GridItem12 from './../../assets/images/Rectangle 18.jpg';
 import GridItem13 from './../../assets/images/Rectangle 19.jpg';
 import GridItem14 from './../../assets/images/Rectangle 20.jpg';
 import GridItem15 from './../../assets/images/Rectangle 21.jpg';
-
-
 import './main.scss';
 import Grid from '../../components/Grid';
 

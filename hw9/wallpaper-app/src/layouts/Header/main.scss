@@ -11,11 +11,20 @@ body{
 }
 .header{
     display: flex;
-    padding: 40px 150px;
+    padding: 40px 5%;
     justify-content: space-between;
     position: sticky;
     top: 0;
     z-index: 2;
     background-color: #173640;
 
+}
+
+@media screen and (max-width:1200px) {
+    .header__logo{
+
+        &__content{
+            display: none;
+        }
+    }
 }

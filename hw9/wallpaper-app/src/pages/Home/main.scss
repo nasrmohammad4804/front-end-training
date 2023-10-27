@@ -1,0 +1,71 @@
+@media screen and (max-width:1200px) and (min-width:992px) {
+    // for laptop
+
+    .header__logo{
+
+        &__content{
+            display: none;
+        }
+    }
+    .main{
+
+        &__grid{
+            width: 47%;
+        }
+    }
+}
+@media screen and (max-width:992px) and (min-width:600px) {
+    
+    // for large mobile and tablet
+    
+    html{
+        font-size: .75rem;
+    }
+    .header{
+
+
+        &__logo{
+            
+            img{
+                width: 40px;
+            }
+
+            &__content{
+                display: none;
+            }
+        }
+
+
+    }
+    .button {
+
+        padding-inline: 15px;
+        padding-block: 4px;
+
+        &__content{
+            display: none;
+        }
+
+
+    }
+    .main{
+
+        gap: 15px;
+        &__grid{
+            width: 48%;
+            
+
+        }
+        &__content{
+            width: 52%;
+        }
+    }
+    .container{
+        gap: 15px;
+    }
+}
+
+@media screen and (min-width:600px) {
+    // for mobile
+} 
+    
