@@ -1,10 +1,18 @@
+import { useRef} from 'react';
+
 import './main.scss';
+import {useIsVisible } from '../../hooks/observator';
 
 
 export default function GridItem({item}) {
 
+  const refElement = useRef();
+
+  let result = useIsVisible(refElement);
+
+
   return (
-    <div className="container__item" style={item.style}>
+    <div ref={refElement} className={result ? 'container__item visible' : 'container__item'} style={item.style}>
 
       
       <div className="container__item__frame container__item__frame--primary ">

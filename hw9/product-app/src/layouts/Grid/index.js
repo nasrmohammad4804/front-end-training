@@ -37,10 +37,8 @@ function CreateItem(picture,content1,content2,footer,style){
     this.style=style;
 }
 
-export default function Grid(){
-
-    
-    const items= [
+function getItems(){
+    return [
 
         new CreateItem(Rectangle1,"Melodius","Music Streaming App UI Kit",'Duplicate This',{ gridArea: '1 / 1 / 2 / 2'}),
         new CreateItem(Rectangle2,"Vakantie","Travel App UI Kit",'Duplicate This',{gridArea: '1 / 2 / 2 / 3'}),
@@ -71,11 +69,15 @@ export default function Grid(){
         new CreateItem(Rectangle26,"Glowup",'Appointment Marketplace App UI Kit','Duplicate This',{gridColumn:'4 / span 2',gridRow:' 9 / span 2'}),
         new CreateItem(Rectangle27,"De Grido",'Portfolio Website Template','Duplicate This',{gridColumn:'1 / span 2',gridRow:' 11 / span 2'}),
 
-    ]
+    ];
 
-    console.log(items[3]);
+}
+export default function Grid(){
 
-    const result = items.map(i => <  GridItem key={crypto.randomUUID()} item={i} />);
+    const items= getItems();
+
+
+    const result = items.map((item) => <  GridItem  key={crypto.randomUUID()} item={item} />);
 
     return <div className="container">
         {result}

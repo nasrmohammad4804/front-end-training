@@ -30,8 +30,13 @@
       ),
       rgba(255, 255, 255, 0.06);
 
-    // background-color: #54545480;
     backdrop-filter: blur(19.370460510253906px);
+
+    opacity: 0;
+    
+    transition-property: opacity , transform;
+    transition-duration: 2s;
+    transform: translate(0,50px);
 
     &__frame {
 
@@ -106,4 +111,9 @@
       }
     }
   }
+}
+
+.visible{
+    opacity: 1;
+    transform: translate(0,0);
 }
