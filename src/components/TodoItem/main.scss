@@ -1,0 +1,65 @@
+.todo__item{
+    padding-inline: 10px;
+    display: flex;
+    padding-block: 6px;
+    border-bottom: 1px solid black;
+}
+.checkbox {
+    flex-grow: 1;
+    $block: &;
+  
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+  
+    &__input {
+      position: absolute;
+      width: 1.375em;
+      height: 1.375em;
+      opacity: 0;
+      cursor: pointer;
+
+  
+      &:checked + #{$block}__icon .tick {
+        stroke-dashoffset: 0;
+      }
+    }
+  
+    &__icon {
+        
+      width: 1.375em;
+      height: 1.375em;
+      flex-shrink: 0;
+      overflow: visible;
+  
+      .tick {
+        stroke-dasharray: 20px;
+        stroke-dashoffset: 20px;
+        transition: stroke-dashoffset .2s ease-out;
+    }
+    }
+  
+    &__label {
+      margin-left: 0.5em;
+    }
+  }
+  .todo__option{
+    font-weight: bold;
+    
+
+  }
+  .remove__todo{
+    color: crimson;
+    font-size: 1.2rem;
+    font-weight: 700;
+    opacity: .7;
+
+    cursor: pointer;
+}
+.todo__color__container{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
